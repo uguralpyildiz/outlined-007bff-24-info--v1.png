@@ -957,12 +957,116 @@ label{
      border-radius: 50px;
  }
 
+.form-submit-page-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    
+    background: url(https://i.ibb.co/FB45RMh/Whats-App-Image-2024-10-16-at-00-29-43.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 15px #00000010;
+    max-width: 900px;
+    transition: .3s ease all;
+    margin: auto;
+    
+    padding: 10px;
+    z-index: 0;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.form-submit-page-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #fff, #ffffff99, #fff);
+    z-index: -1;
+}
+.form-submit-page-container .alt{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+ .form-submit-page {
+    position: relative;
+    top: 0;
+    left: 0;
+     display: none;
+     align-items: center;
+     flex-direction: column;
+     gap: 20px;
+     transition: .5s ease all;
+    animation: eases .5s ease;
+ }
+.submit-title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.submit-alt{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000000b6;
+    font-weight: 400;
+}
+.submit-price{
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.bg-white{
+    background: #007bff10;
+    border: 1px dotted #041c3a50;
+}
+.bg-white::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+}
+.bg-white .alt{
+    background: transparent !important;
+}
  .selected {
      background: linear-gradient(to right, #007bff20, #09689430) !important;
      border: 1px solid #64a6ec !important;
 
  }
-
+.submit-info{
+    font-size: 13px;
+}
+.submit-button{
+    padding: 15px 0;
+    
+    width: 200px;
+}
+.submit-button a{
+    padding: 15px 20px;
+    background: #007bff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+}
  button:hover {
      opacity: 0.8;
  }
