@@ -70,10 +70,10 @@ nav a{
      top: 0;
      left: 0;
 
-     text-align: center;
+     text-align: left;
      background: #fff;
      color: #444444;
-     padding: 15px;
+     padding: 15px 25px;
      font-size: 16px;
    
      z-index: 99;
@@ -202,7 +202,7 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin:10px 20px;
     font-size: 14px;
     color: #0a72e0;
     background: #0a72e010;

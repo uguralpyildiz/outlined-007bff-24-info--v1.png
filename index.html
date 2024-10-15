@@ -40,7 +40,8 @@
     
    <div class="container">
     <div class="info-bar">
-        <h1>Your Mind, our Journey <span style="border-bottom:2px solid #0084ff;">I'm Here</span> to Guide You</h1>
+         
+        <h1>Your Mind, Our Journey - <span style="border-bottom:2px solid #0084ff;">I'm Here</span> to Guide You</h1>
         <div class="alt">
             <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
                 alt="info--v1" />
@@ -57,7 +58,7 @@
     <form id="survey-form" action="/action_page.php" method="get">
     
         <div class="progress-bar">
-            <div class="progress"></div>
+            <div  class="progress"></div>
         </div>
     
     
@@ -705,8 +706,10 @@
                         // Eğer yanıt verilmişse bir sonraki soruya geç
                         if (answered) {
                             if (currentQuestion < questions.length - 1) {
-                                currentQuestion++;
-                                showQuestion(currentQuestion);
+                                setTimeout(() => {
+                                    currentQuestion++;
+                                    showQuestion(currentQuestion);
+                                }, 100);
                             }
                         } else {
                             // Uyarı mesajı göster
