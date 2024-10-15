@@ -19,633 +19,826 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/607e4879ac.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-           <img width="35px" src="logo.png" alt="logo"> <span>your<span style="color: #95d4ff;">my</span>therapist.com</span>
-        </div>
-        <!-- <div class="link">
-            <a href="#" class="active">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Prices</a>
-            <a href="#">Servies</a>
-        </div> -->
-    </nav>
+   
     
-   <div class="container">
-    <div class="info-bar">
-         
-        <h1>Your Mind, Our Journey - <span style="border-bottom:2px solid #0084ff;">I'm Here</span> to Guide You</h1>
-        <div class="alt">
-            <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                alt="info--v1" />
-            <span>These questions will help your therapist understand your needs. Based on your answers, a personalized plan
-                will be
-                created, and you will receive instructions via email.
-            </span>
+   <section class="hero">
+    
+
+    <nav>
+    
+        <div class="nav-container">
+            <div class="nav-title">
+                <div class="logo">
+                    <img width="35px" src="logo.png" alt="logo"> <span>your<span style="color: #0084ff;">my</span>therapist.com</span>
+                </div>
+            </div>
+    
+            <div class="nav-link-container">
+                <div class="nav-links nav-link-settings">
+                    <div class="nav-menu-header">
+                        <div class="logo">
+                            <img width="35px" src="logo.png" alt="logo"> <span>your<span style="color: #0084ff;">my</span>therapist.com</span>
+                        </div>
+                    </div>
+                    <div id="nth" class="nav-links-effect-container">
+    
+                        <a href="#" class="nav-link" href="#">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p1">
+                                    <div class="link-numbers">01</div><span class="slash">//</span>Home
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="nav-link" href="#">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p2">
+                                    <div class="link-numbers">02</div><span class="slash">//</span>About Me
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="nav-link" href="#">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p3">
+                                    <div class="link-numbers">03</div><span class="slash">//</span>Prices
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="nav-link" href="#">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p4">
+                                    <div class="link-numbers">04</div><span class="slash">//</span>Services
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="nav-link" href="#">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p5">
+                                    <div class="link-numbers">05</div><span class="slash">//</span>Contact
+                                </div>
+                            </div>
+                        </a>
+    
+                        <div class="dot-link-effect"></div>
+    
+                    </div>
+                    <div class="download-center">
+                        <a href="#get-started" id="downloadCv" class="download-cv" href="#"><span class="download-text">Get Started</span></a>
+                    </div>
+    
+                </div>
+                <button class="menu-btn"><i class="fa-solid fa-bars-staggered"></i></button>
+            </div>
         </div>
+    </nav>
+
+    <div class="container">
+        <div class="info-bar">
+    
+            <h1>Your Mind, Our Journey - <span style="border-bottom:2px solid #0084ff;">I'm Here</span> to Guide You</h1>
+            <div class="alt">
+                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                    alt="info--v1" />
+                <span>These questions will help your therapist understand your needs. Based on your answers, a personalized
+                    plan
+                    will be
+                    created, and you will receive instructions via email.
+                </span>
+            </div>
+    
+        </div>
+        <!-- <div class="footer">
+           
+        </div> -->
+        <form id="survey-form" action="/action_page.php" method="get">
+    
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+    
+    
+            
+            <div class="question">
+                
+    
+                <h2>How old are you?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="age_range" value="15-18"> 15-18 years
+                        old</label>
+                    <label><input class="input-box next" type="radio" name="age_range" value="18-25"> 18-25 years
+                        old</label>
+                    <label><input class="input-box next" type="radio" name="age_range" value="25-50"> 25-50 years
+                        old</label>
+                    <label><input class="input-box next" type="radio" name="age_range" value="50-99"> 50-99 years
+                        old</label>
+    
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>What is your gender identity?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="gender_identity" value="Woman"> Woman</label>
+                    <label><input class="input-box next" type="radio" name="gender_identity" value="Man"> Man</label>
+                    <label><input class="input-box next" type="radio" name="gender_identity" value="Non Binary"> Non
+                        Binary</label>
+                    <label><input class="input-box next" type="radio" name="gender_identity" value="Transfeminine">
+                        Transfeminine</label>
+                    <label><input class="input-box next" type="radio" name="gender_identity" value="Transmasculine">
+                        Transmasculine</label>
+                    <label><input class="input-box next" type="radio" name="gender_identity" value="Agender">
+                        Agender</label>
+                    <label><input class="input-box next" type="radio" name="gender_identity" value="I don't know"> I don't
+                        know</label>
+                    <label><input class="input-box next" type="radio" name="gender_identity" value="Prefer not to say">
+                        Prefer
+                        not
+                        to
+                        say</label>
+                    <label><input class="input-box next" type="radio" name="gender_identity" value="Other"> Other</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>How do you identify?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="identity" value="Straight"> Straight</label>
+                    <label><input class="input-box next" type="radio" name="identity" value="Gay"> Gay</label>
+                    <label><input class="input-box next" type="radio" name="identity" value="Lesbian"> Lesbian</label>
+                    <label><input class="input-box next" type="radio" name="identity" value="Bi or Pan"> Bi or Pan</label>
+                    <label><input class="input-box next" type="radio" name="identity" value="Prefer not to say"> Prefer not
+                        to
+                        say</label>
+                    <label><input class="input-box next" type="radio" name="identity" value="Questioning">
+                        Questioning</label>
+                    <label><input class="input-box next" type="radio" name="identity" value="Queer"> Queer</label>
+                    <label><input class="input-box next" type="radio" name="identity" value="Asexual"> Asexual</label>
+                    <label><input class="input-box next" type="radio" name="identity" value="I don't know"> I don't
+                        know</label>
+                    <label><input class="input-box next" type="radio" name="identity" value="Other"> Other</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>What are your pronouns?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="pronouns" value="She/her"> She/her</label>
+                    <label><input class="input-box next" type="radio" name="pronouns" value="He/him"> He/him</label>
+                    <label><input class="input-box next" type="radio" name="pronouns" value="They/them"> They/them</label>
+                    <label><input class="input-box next" type="radio" name="pronouns" value="Other"> Other</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>What is your relationship status?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="relationship_status" value="Single">
+                        Single</label>
+                    <label><input class="input-box next" type="radio" name="relationship_status" value="In a relationship">
+                        In a
+                        relationship</label>
+                    <label><input class="input-box next" type="radio" name="relationship_status" value="Married">
+                        Married</label>
+                    <label><input class="input-box next" type="radio" name="relationship_status" value="Divorced">
+                        Divorced</label>
+                    <label><input class="input-box next" type="radio" name="relationship_status" value="Widowed">
+                        Widowed</label>
+                    <label><input class="input-box next" type="radio" name="relationship_status" value="Other">
+                        Other</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>Do you consider yourself to be spiritual?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="spirituality" value="No"> No</label>
+                    <label><input class="input-box next" type="radio" name="spirituality" value="Yes"> Yes</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>Have you ever been in therapy before?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="therapy_experience" value="No"> No</label>
+                    <label><input class="input-box next" type="radio" name="therapy_experience" value="Yes"> Yes</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>What led you to consider therapy today?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="I've been feeling depressed">
+                        I've been
+                        feeling depressed</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="I feel anxious or overwhelmed"> I feel
+                        anxious or
+                        overwhelmed</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="My mood is interfering with my job/school performance"> My mood is interfering with my
+                        job/school performance</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="I struggle with building or maintaining relationships"> I struggle with building or
+                        maintaining relationships</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="I can't find purpose and meaning in my life"> I
+                        can't find purpose and meaning in my life</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason" value="I am grieving"> I am
+                        grieving</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="I have experienced trauma"> I
+                        have
+                        experienced
+                        trauma</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="I need to talk through a specific challenge"> I need
+                        to talk through a specific challenge</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="I want to gain self confidence"> I want
+                        to gain self
+                        confidence</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="I want to improve myself but I don't know where to start"> I want to improve myself but I
+                        don't know where to start</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason"
+                            value="Recommended to me (friend, family, doctor)">
+                        Recommended to me (friend, family, doctor)</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason" value="Just exploring"> Just
+                        exploring</label>
+                    <label><input class="input-box next" type="radio" name="therapy_reason" value="Other"> Other</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>What are your expectations from me? I am a therapist who...</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="expectations" value="Listens"> Listens</label>
+                    <label><input class="input-box next" type="radio" name="expectations" value="Explores my past"> Explores
+                        my
+                        past</label>
+                    <label><input class="input-box next" type="radio" name="expectations" value="Teaches me new skills">
+                        Teaches
+                        me new
+                        skills</label>
+                    <label><input class="input-box next" type="radio" name="expectations" value="Challenges my beliefs">
+                        Challenges my
+                        beliefs</label>
+                    <label><input class="input-box next" type="radio" name="expectations" value="Assigns me homework">
+                        Assigns
+                        me
+                        homework</label>
+                    <label><input class="input-box next" type="radio" name="expectations" value="Guides me to set goals">
+                        Guides
+                        me to set
+                        goals</label>
+                    <label><input class="input-box next" type="radio" name="expectations"
+                            value="Proactively checks in with me">
+                        Proactively
+                        checks in
+                        with me</label>
+                    <label><input class="input-box next" type="radio" name="expectations" value="Other"> Other</label>
+                    <label><input class="input-box next" type="radio" name="expectations" value="I don't know"> I don't
+                        know</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>How would you rate your current physical health?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="physical_health" value="Good"> Good</label>
+                    <label><input class="input-box next" type="radio" name="physical_health" value="Fair"> Fair</label>
+                    <label><input class="input-box next" type="radio" name="physical_health" value="Poor"> Poor</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>How would you rate your current eating habits?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="eating_habits" value="Good"> Good</label>
+                    <label><input class="input-box next" type="radio" name="eating_habits" value="Fair"> Fair</label>
+                    <label><input class="input-box next" type="radio" name="eating_habits" value="Poor"> Poor</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>Are you currently experiencing overwhelming sadness, grief, or depression?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="overwhelming_feelings" value="No"> No</label>
+                    <label><input class="input-box next" type="radio" name="overwhelming_feelings" value="Yes"> Yes</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h3>Little interest or pleasure in doing things.</h3>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="little_interest" value="Not at all"> Not at
+                        all</label>
+                    <label><input class="input-box next" type="radio" name="little_interest" value="Several days"> Several
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="little_interest"
+                            value="More than half the days">
+                        More than
+                        half the days</label>
+                    <label><input class="input-box next" type="radio" name="little_interest" value="Nearly every day">
+                        Nearly
+                        every
+                        day</label>
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h3>Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or
+                    restless that you have been moving around a lot more than usual.</h3>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="movement" value="Not at all"> Not at all</label>
+                    <label><input class="input-box next" type="radio" name="movement" value="Several days"> Several
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="movement" value="More than half the days"> More
+                        than
+                        half
+                        the days</label>
+                    <label><input class="input-box next" type="radio" name="movement" value="Nearly every day"> Nearly every
+                        day</label>
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h3>Feeling down, depressed or hopeless.</h3>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="feeling_down" value="Not at all"> Not at
+                        all</label>
+                    <label><input class="input-box next" type="radio" name="feeling_down" value="Several days"> Several
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="feeling_down" value="More than half the days">
+                        More
+                        than
+                        half the days</label>
+                    <label><input class="input-box next" type="radio" name="feeling_down" value="Nearly every day"> Nearly
+                        every
+                        day</label>
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h3>Trouble falling asleep, staying asleep, or sleeping too much.</h3>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="sleep_trouble" value="Not at all"> Not at
+                        all</label>
+                    <label><input class="input-box next" type="radio" name="sleep_trouble" value="Several days"> Several
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="sleep_trouble" value="More than half the days">
+                        More
+                        than
+                        half the days</label>
+                    <label><input class="input-box next" type="radio" name="sleep_trouble" value="Nearly every day"> Nearly
+                        every
+                        day</label>
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h3>Feeling tired or having little energy.</h3>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="tired" value="Not at all"> Not at all</label>
+                    <label><input class="input-box next" type="radio" name="tired" value="Several days"> Several
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="tired" value="More than half the days"> More
+                        than
+                        half the
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="tired" value="Nearly every day"> Nearly every
+                        day</label>
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h3>Poor appetite or overeating.</h3>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="appetite" value="Not at all"> Not at all</label>
+                    <label><input class="input-box next" type="radio" name="appetite" value="Several days"> Several
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="appetite" value="More than half the days"> More
+                        than
+                        half
+                        the days</label>
+                    <label><input class="input-box next" type="radio" name="appetite" value="Nearly every day"> Nearly every
+                        day</label>
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h3>Feeling bad about yourself - or that you are a failure or have let yourself or your family down.</h3>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="bad_feeling" value="Not at all"> Not at
+                        all</label>
+                    <label><input class="input-box next" type="radio" name="bad_feeling" value="Several days"> Several
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="bad_feeling" value="More than half the days">
+                        More
+                        than half
+                        the days</label>
+                    <label><input class="input-box next" type="radio" name="bad_feeling" value="Nearly every day"> Nearly
+                        every
+                        day</label>
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h3>Trouble concentrating on things, such as reading the newspaper or watching television.</h3>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="concentration" value="Not at all"> Not at
+                        all</label>
+                    <label><input class="input-box next" type="radio" name="concentration" value="Several days"> Several
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="concentration" value="More than half the days">
+                        More
+                        than
+                        half the days</label>
+                    <label><input class="input-box next" type="radio" name="concentration" value="Nearly every day"> Nearly
+                        every
+                        day</label>
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h3>Thoughts that you would be better off dead or of hurting yourself in some way.</h3>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="thoughts" value="Not at all"> Not at all</label>
+                    <label><input class="input-box next" type="radio" name="thoughts" value="Several days"> Several
+                        days</label>
+                    <label><input class="input-box next" type="radio" name="thoughts" value="More than half the days"> More
+                        than
+                        half
+                        the days</label>
+                    <label><input class="input-box next" type="radio" name="thoughts" value="Nearly every day"> Nearly every
+                        day</label>
+                </div>
+            </div>
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>How difficult have these problems made it for you to do your work, take care of things at home, or get
+                    along with other people?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="difficulty" value="Not difficult at all"> Not
+                        difficult at
+                        all</label>
+                    <label><input class="input-box next" type="radio" name="difficulty" value="Somewhat difficult"> Somewhat
+                        difficult</label>
+                    <label><input class="input-box next" type="radio" name="difficulty" value="Very difficult"> Very
+                        difficult</label>
+                    <label><input class="input-box next" type="radio" name="difficulty" value="Extremely difficult">
+                        Extremely
+                        difficult</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>Are you currently employed?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="employment" value="No"> No</label>
+                    <label><input class="input-box next" type="radio" name="employment" value="Yes"> Yes</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>Do you have any problems or worries about intimacy?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="intimacy" value="No"> No</label>
+                    <label><input class="input-box next" type="radio" name="intimacy" value="Yes"> Yes</label>
+                </div>
+                <div class="navigation">
+    
+                </div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>How often do you drink alcohol?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="alcohol" value="Never"> Never</label>
+                    <label><input class="input-box next" type="radio" name="alcohol" value="Infrequently">
+                        Infrequently</label>
+                    <label><input class="input-box next" type="radio" name="alcohol" value="Monthly"> Monthly</label>
+                    <label><input class="input-box next" type="radio" name="alcohol" value="Weekly"> Weekly</label>
+                    <label><input class="input-box next" type="radio" name="alcohol" value="Daily"> Daily</label>
+                </div>
+                <div class="navigation"></div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>When was the last time you thought about suicide?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Never"> Never</label>
+                    <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Over a year ago"> Over
+                        a
+                        year
+                        ago</label>
+                    <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Over 3 months ago">
+                        Over 3
+                        months ago</label>
+                    <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Over a month ago"> Over
+                        a
+                        month
+                        ago</label>
+                    <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Over 2 weeks ago"> Over
+                        2
+                        weeks
+                        ago</label>
+                    <label><input class="input-box next" type="radio" name="suicide_thoughts" value="In the last 2 weeks">
+                        In
+                        the
+                        last 2 weeks</label>
+                </div>
+                <div class="navigation"></div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>Are you currently experiencing anxiety, panic attacks or have any phobias?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="anxiety" value="No"> No</label>
+                    <label><input class="input-box next" type="radio" name="anxiety" value="Yes"> Yes</label>
+                </div>
+                <div class="navigation"></div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>Are you currently taking any medication?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="medication" value="No"> No</label>
+                    <label><input class="input-box next" type="radio" name="medication" value="Yes"> Yes</label>
+                </div>
+                <div class="navigation"></div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>Are you currently experiencing any chronic pain?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="chronic_pain" value="No"> No</label>
+                    <label><input class="input-box next" type="radio" name="chronic_pain" value="Yes"> Yes</label>
+                </div>
+                <div class="navigation"></div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>How would you rate your current financial status?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="financial_status" value="Good"> Good</label>
+                    <label><input class="input-box next" type="radio" name="financial_status" value="Fair"> Fair</label>
+                    <label><input class="input-box next" type="radio" name="financial_status" value="Poor"> Poor</label>
+                </div>
+                <div class="navigation"></div>
+            </div>
+    
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>How would you rate your current sleeping habits?</h2>
+                <div class="l-container">
+                    <label><input class="input-box next" type="radio" name="sleeping_habits" value="Good"> Good</label>
+                    <label><input class="input-box next" type="radio" name="sleeping_habits" value="Fair"> Fair</label>
+                    <label><input class="input-box next" type="radio" name="sleeping_habits" value="Poor"> Poor</label>
+                </div>
+                <div class="navigation"></div>
+            </div>
+    
+            <div class="question">
+    
+                <h2>Which of the following resources would be useful for you?</h2>
+                <div class="l-container">
+                    <label><input class="input-box" type="checkbox" name="resources" value="Support groups"> Support
+                        groups</label>
+                    <label><input class="input-box" type="checkbox" name="resources" value="Therapy journal"> Therapy
+                        journal</label>
+                    <label><input class="input-box" type="checkbox" name="resources" value="Self-help books"> Self-help
+                        books</label>
+                    <label><input class="input-box" type="checkbox" name="resources" value="Meditation apps"> Meditation
+                        apps</label>
+                    <label><input class="input-box" type="checkbox" name="resources" value="Stress management courses">
+                        Stress
+                        management courses</label>
+                    <label><input class="input-box" type="checkbox" name="resources" value="Online therapy"> Online
+                        therapy</label>
+                    <label><input class="input-box" type="checkbox" name="resources" value="None of the above"> None of the
+                        above</label>
+                    <div class="navigation">
+                        <button type="button" class="next">Next</button>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="question ">
+                <h2>Is there anything else you would like to share?</h2>
+                <div class="l-container">
+                    <textarea name="additional_comments" rows="4" cols="50" placeholder="Message"></textarea>
+                    <label class="textnext"><input class="input-box next" type="radio" name="next_message" value="next">
+                        Next</label>
+    
+                </div>
+            </div>
+            <div class="question">
+                <div class="prev"> <img width="25" height="25"
+                        src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
+                <h2>To send you your results and recommendations regarding your therapist, please fill in the field below:
+                </h2>
+                <div class="l-container">
+                    <input type="email" required name="emails" rows="4" cols="50" placeholder="Email"></textarea>
+    
+                    <div class="alt">
+    
+                        <span>
+                            By clicking 'View Results,' you agree to the <a style="font-weight: 600;color: #1d71c0;"
+                                href="#">terms and conditions</a>.
+                            <br><br>
+                            If you have any questions or need assistance, feel free to contact us at <a
+                                style="font-weight: 600;color: #1d71c0;"
+                                href="mailto:info@yourmytherapist.com">info@yourmytherapist.com</a>
+                        </span>
+                    </div>
+                    <div class="navigation">
+    
+                        <button type="submit">View Results</button>
+                    </div>
+                </div>
+            </div>
+    
+        </form>
     
     </div>
-    <!-- <div class="footer">
-       
-    </div> -->
-    <form id="survey-form" action="/action_page.php" method="get">
-    
-        <div class="progress-bar">
-            <div  class="progress"></div>
-        </div>
-    
-    
-        <div class="question">
-            
-            <h2>Which language do you speak?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="language" value="english"> English</label>
-                <label><input class="input-box next" type="radio" name="language" value="german"> Deutsch</label>
-                <label><input class="input-box next" type="radio" name="language" value="turkish"> Türkçe</label>
+   </section>
+   
 
-    
-            </div>
-            <div class="navigation">
-                
-            </div>
-        </div>
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /></div>
-            
-            <h2>How old are you?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="age_range" value="15-18"> 15-18 years old</label>
-                <label><input class="input-box next" type="radio" name="age_range" value="18-25"> 18-25 years old</label>
-                <label><input class="input-box next" type="radio" name="age_range" value="25-50"> 25-50 years old</label>
-                <label><input class="input-box next" type="radio" name="age_range" value="50-99"> 50-99 years old</label>
-    
-            </div>
-            <div class="navigation">
-                
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>What is your gender identity?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="gender_identity" value="Woman"> Woman</label>
-                <label><input class="input-box next" type="radio" name="gender_identity" value="Man"> Man</label>
-                <label><input class="input-box next" type="radio" name="gender_identity" value="Non Binary"> Non
-                    Binary</label>
-                <label><input class="input-box next" type="radio" name="gender_identity" value="Transfeminine">
-                    Transfeminine</label>
-                <label><input class="input-box next" type="radio" name="gender_identity" value="Transmasculine">
-                    Transmasculine</label>
-                <label><input class="input-box next" type="radio" name="gender_identity" value="Agender"> Agender</label>
-                <label><input class="input-box next" type="radio" name="gender_identity" value="I don't know"> I don't
-                    know</label>
-                <label><input class="input-box next" type="radio" name="gender_identity" value="Prefer not to say"> Prefer
-                    not
-                    to
-                    say</label>
-                <label><input class="input-box next" type="radio" name="gender_identity" value="Other"> Other</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>How do you identify?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="identity" value="Straight"> Straight</label>
-                <label><input class="input-box next" type="radio" name="identity" value="Gay"> Gay</label>
-                <label><input class="input-box next" type="radio" name="identity" value="Lesbian"> Lesbian</label>
-                <label><input class="input-box next" type="radio" name="identity" value="Bi or Pan"> Bi or Pan</label>
-                <label><input class="input-box next" type="radio" name="identity" value="Prefer not to say"> Prefer not to
-                    say</label>
-                <label><input class="input-box next" type="radio" name="identity" value="Questioning"> Questioning</label>
-                <label><input class="input-box next" type="radio" name="identity" value="Queer"> Queer</label>
-                <label><input class="input-box next" type="radio" name="identity" value="Asexual"> Asexual</label>
-                <label><input class="input-box next" type="radio" name="identity" value="I don't know"> I don't know</label>
-                <label><input class="input-box next" type="radio" name="identity" value="Other"> Other</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>What are your pronouns?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="pronouns" value="She/her"> She/her</label>
-                <label><input class="input-box next" type="radio" name="pronouns" value="He/him"> He/him</label>
-                <label><input class="input-box next" type="radio" name="pronouns" value="They/them"> They/them</label>
-                <label><input class="input-box next" type="radio" name="pronouns" value="Other"> Other</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>What is your relationship status?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="relationship_status" value="Single"> Single</label>
-                <label><input class="input-box next" type="radio" name="relationship_status" value="In a relationship"> In a
-                    relationship</label>
-                <label><input class="input-box next" type="radio" name="relationship_status" value="Married">
-                    Married</label>
-                <label><input class="input-box next" type="radio" name="relationship_status" value="Divorced">
-                    Divorced</label>
-                <label><input class="input-box next" type="radio" name="relationship_status" value="Widowed">
-                    Widowed</label>
-                <label><input class="input-box next" type="radio" name="relationship_status" value="Other"> Other</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>Do you consider yourself to be spiritual?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="spirituality" value="No"> No</label>
-                <label><input class="input-box next" type="radio" name="spirituality" value="Yes"> Yes</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>Have you ever been in therapy before?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="therapy_experience" value="No"> No</label>
-                <label><input class="input-box next" type="radio" name="therapy_experience" value="Yes"> Yes</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>What led you to consider therapy today?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="therapy_reason" value="I've been feeling depressed">
-                    I've been
-                    feeling depressed</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason"
-                        value="I feel anxious or overwhelmed"> I feel
-                    anxious or
-                    overwhelmed</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason"
-                        value="My mood is interfering with my job/school performance"> My mood is interfering with my
-                    job/school performance</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason"
-                        value="I struggle with building or maintaining relationships"> I struggle with building or
-                    maintaining relationships</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason"
-                        value="I can't find purpose and meaning in my life"> I
-                    can't find purpose and meaning in my life</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason" value="I am grieving"> I am
-                    grieving</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason" value="I have experienced trauma"> I
-                    have
-                    experienced
-                    trauma</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason"
-                        value="I need to talk through a specific challenge"> I need
-                    to talk through a specific challenge</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason"
-                        value="I want to gain self confidence"> I want
-                    to gain self
-                    confidence</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason"
-                        value="I want to improve myself but I don't know where to start"> I want to improve myself but I
-                    don't know where to start</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason"
-                        value="Recommended to me (friend, family, doctor)">
-                    Recommended to me (friend, family, doctor)</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason" value="Just exploring"> Just
-                    exploring</label>
-                <label><input class="input-box next" type="radio" name="therapy_reason" value="Other"> Other</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>What are your expectations from me? I am a therapist who...</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="expectations" value="Listens"> Listens</label>
-                <label><input class="input-box next" type="radio" name="expectations" value="Explores my past"> Explores my
-                    past</label>
-                <label><input class="input-box next" type="radio" name="expectations" value="Teaches me new skills"> Teaches
-                    me new
-                    skills</label>
-                <label><input class="input-box next" type="radio" name="expectations" value="Challenges my beliefs">
-                    Challenges my
-                    beliefs</label>
-                <label><input class="input-box next" type="radio" name="expectations" value="Assigns me homework"> Assigns
-                    me
-                    homework</label>
-                <label><input class="input-box next" type="radio" name="expectations" value="Guides me to set goals"> Guides
-                    me to set
-                    goals</label>
-                <label><input class="input-box next" type="radio" name="expectations" value="Proactively checks in with me">
-                    Proactively
-                    checks in
-                    with me</label>
-                <label><input class="input-box next" type="radio" name="expectations" value="Other"> Other</label>
-                <label><input class="input-box next" type="radio" name="expectations" value="I don't know"> I don't
-                    know</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" />  </div>
-            <h2>How would you rate your current physical health?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="physical_health" value="Good"> Good</label>
-                <label><input class="input-box next" type="radio" name="physical_health" value="Fair"> Fair</label>
-                <label><input class="input-box next" type="radio" name="physical_health" value="Poor"> Poor</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>How would you rate your current eating habits?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="eating_habits" value="Good"> Good</label>
-                <label><input class="input-box next" type="radio" name="eating_habits" value="Fair"> Fair</label>
-                <label><input class="input-box next" type="radio" name="eating_habits" value="Poor"> Poor</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>Are you currently experiencing overwhelming sadness, grief, or depression?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="overwhelming_feelings" value="No"> No</label>
-                <label><input class="input-box next" type="radio" name="overwhelming_feelings" value="Yes"> Yes</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h3>Little interest or pleasure in doing things.</h3>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="little_interest" value="Not at all"> Not at
-                    all</label>
-                <label><input class="input-box next" type="radio" name="little_interest" value="Several days"> Several
-                    days</label>
-                <label><input class="input-box next" type="radio" name="little_interest" value="More than half the days">
-                    More than
-                    half the days</label>
-                <label><input class="input-box next" type="radio" name="little_interest" value="Nearly every day"> Nearly
-                    every
-                    day</label>
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h3>Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or
-                restless that you have been moving around a lot more than usual.</h3>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="movement" value="Not at all"> Not at all</label>
-                <label><input class="input-box next" type="radio" name="movement" value="Several days"> Several days</label>
-                <label><input class="input-box next" type="radio" name="movement" value="More than half the days"> More than
-                    half
-                    the days</label>
-                <label><input class="input-box next" type="radio" name="movement" value="Nearly every day"> Nearly every
-                    day</label>
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h3>Feeling down, depressed or hopeless.</h3>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="feeling_down" value="Not at all"> Not at all</label>
-                <label><input class="input-box next" type="radio" name="feeling_down" value="Several days"> Several
-                    days</label>
-                <label><input class="input-box next" type="radio" name="feeling_down" value="More than half the days"> More
-                    than
-                    half the days</label>
-                <label><input class="input-box next" type="radio" name="feeling_down" value="Nearly every day"> Nearly every
-                    day</label>
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h3>Trouble falling asleep, staying asleep, or sleeping too much.</h3>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="sleep_trouble" value="Not at all"> Not at
-                    all</label>
-                <label><input class="input-box next" type="radio" name="sleep_trouble" value="Several days"> Several
-                    days</label>
-                <label><input class="input-box next" type="radio" name="sleep_trouble" value="More than half the days"> More
-                    than
-                    half the days</label>
-                <label><input class="input-box next" type="radio" name="sleep_trouble" value="Nearly every day"> Nearly
-                    every
-                    day</label>
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h3>Feeling tired or having little energy.</h3>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="tired" value="Not at all"> Not at all</label>
-                <label><input class="input-box next" type="radio" name="tired" value="Several days"> Several days</label>
-                <label><input class="input-box next" type="radio" name="tired" value="More than half the days"> More than
-                    half the
-                    days</label>
-                <label><input class="input-box next" type="radio" name="tired" value="Nearly every day"> Nearly every
-                    day</label>
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h3>Poor appetite or overeating.</h3>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="appetite" value="Not at all"> Not at all</label>
-                <label><input class="input-box next" type="radio" name="appetite" value="Several days"> Several days</label>
-                <label><input class="input-box next" type="radio" name="appetite" value="More than half the days"> More than
-                    half
-                    the days</label>
-                <label><input class="input-box next" type="radio" name="appetite" value="Nearly every day"> Nearly every
-                    day</label>
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h3>Feeling bad about yourself - or that you are a failure or have let yourself or your family down.</h3>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="bad_feeling" value="Not at all"> Not at all</label>
-                <label><input class="input-box next" type="radio" name="bad_feeling" value="Several days"> Several
-                    days</label>
-                <label><input class="input-box next" type="radio" name="bad_feeling" value="More than half the days"> More
-                    than half
-                    the days</label>
-                <label><input class="input-box next" type="radio" name="bad_feeling" value="Nearly every day"> Nearly every
-                    day</label>
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h3>Trouble concentrating on things, such as reading the newspaper or watching television.</h3>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="concentration" value="Not at all"> Not at
-                    all</label>
-                <label><input class="input-box next" type="radio" name="concentration" value="Several days"> Several
-                    days</label>
-                <label><input class="input-box next" type="radio" name="concentration" value="More than half the days"> More
-                    than
-                    half the days</label>
-                <label><input class="input-box next" type="radio" name="concentration" value="Nearly every day"> Nearly
-                    every
-                    day</label>
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h3>Thoughts that you would be better off dead or of hurting yourself in some way.</h3>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="thoughts" value="Not at all"> Not at all</label>
-                <label><input class="input-box next" type="radio" name="thoughts" value="Several days"> Several days</label>
-                <label><input class="input-box next" type="radio" name="thoughts" value="More than half the days"> More than
-                    half
-                    the days</label>
-                <label><input class="input-box next" type="radio" name="thoughts" value="Nearly every day"> Nearly every
-                    day</label>
-            </div>
-        </div>
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>How difficult have these problems made it for you to do your work, take care of things at home, or get
-                along with other people?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="difficulty" value="Not difficult at all"> Not
-                    difficult at
-                    all</label>
-                <label><input class="input-box next" type="radio" name="difficulty" value="Somewhat difficult"> Somewhat
-                    difficult</label>
-                <label><input class="input-box next" type="radio" name="difficulty" value="Very difficult"> Very
-                    difficult</label>
-                <label><input class="input-box next" type="radio" name="difficulty" value="Extremely difficult"> Extremely
-                    difficult</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>Are you currently employed?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="employment" value="No"> No</label>
-                <label><input class="input-box next" type="radio" name="employment" value="Yes"> Yes</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>Do you have any problems or worries about intimacy?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="intimacy" value="No"> No</label>
-                <label><input class="input-box next" type="radio" name="intimacy" value="Yes"> Yes</label>
-            </div>
-            <div class="navigation">
-    
-            </div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>How often do you drink alcohol?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="alcohol" value="Never"> Never</label>
-                <label><input class="input-box next" type="radio" name="alcohol" value="Infrequently"> Infrequently</label>
-                <label><input class="input-box next" type="radio" name="alcohol" value="Monthly"> Monthly</label>
-                <label><input class="input-box next" type="radio" name="alcohol" value="Weekly"> Weekly</label>
-                <label><input class="input-box next" type="radio" name="alcohol" value="Daily"> Daily</label>
-            </div>
-            <div class="navigation"></div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>When was the last time you thought about suicide?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Never"> Never</label>
-                <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Over a year ago"> Over a
-                    year
-                    ago</label>
-                <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Over 3 months ago"> Over 3
-                    months ago</label>
-                <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Over a month ago"> Over a
-                    month
-                    ago</label>
-                <label><input class="input-box next" type="radio" name="suicide_thoughts" value="Over 2 weeks ago"> Over 2
-                    weeks
-                    ago</label>
-                <label><input class="input-box next" type="radio" name="suicide_thoughts" value="In the last 2 weeks"> In
-                    the
-                    last 2 weeks</label>
-            </div>
-            <div class="navigation"></div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>Are you currently experiencing anxiety, panic attacks or have any phobias?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="anxiety" value="No"> No</label>
-                <label><input class="input-box next" type="radio" name="anxiety" value="Yes"> Yes</label>
-            </div>
-            <div class="navigation"></div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>Are you currently taking any medication?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="medication" value="No"> No</label>
-                <label><input class="input-box next" type="radio" name="medication" value="Yes"> Yes</label>
-            </div>
-            <div class="navigation"></div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>Are you currently experiencing any chronic pain?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="chronic_pain" value="No"> No</label>
-                <label><input class="input-box next" type="radio" name="chronic_pain" value="Yes"> Yes</label>
-            </div>
-            <div class="navigation"></div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>How would you rate your current financial status?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="financial_status" value="Good"> Good</label>
-                <label><input class="input-box next" type="radio" name="financial_status" value="Fair"> Fair</label>
-                <label><input class="input-box next" type="radio" name="financial_status" value="Poor"> Poor</label>
-            </div>
-            <div class="navigation"></div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>How would you rate your current sleeping habits?</h2>
-            <div class="l-container">
-                <label><input class="input-box next" type="radio" name="sleeping_habits" value="Good"> Good</label>
-                <label><input class="input-box next" type="radio" name="sleeping_habits" value="Fair"> Fair</label>
-                <label><input class="input-box next" type="radio" name="sleeping_habits" value="Poor"> Poor</label>
-            </div>
-            <div class="navigation"></div>
-        </div>
-    
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>Which of the following resources would be useful for you?</h2>
-            <div class="l-container">
-                <label><input class="input-box" type="checkbox" name="resources" value="Support groups"> Support
-                    groups</label>
-                <label><input class="input-box" type="checkbox" name="resources" value="Therapy journal"> Therapy
-                    journal</label>
-                <label><input class="input-box" type="checkbox" name="resources" value="Self-help books"> Self-help
-                    books</label>
-                <label><input class="input-box" type="checkbox" name="resources" value="Meditation apps"> Meditation
-                    apps</label>
-                <label><input class="input-box" type="checkbox" name="resources" value="Stress management courses"> Stress
-                    management courses</label>
-                <label><input class="input-box" type="checkbox" name="resources" value="Online therapy"> Online
-                    therapy</label>
-                <label><input class="input-box" type="checkbox" name="resources" value="None of the above"> None of the
-                    above</label>
-                <div class="navigation">
-                    <button type="button" class="next">Next</button>
-                </div>
-            </div>
-    
-        </div>
-    
-    
-        <div class="question ">
-            <h2>Is there anything else you would like to share?</h2>
-            <div class="l-container">
-                <textarea name="additional_comments" rows="4" cols="50" placeholder="Message"></textarea>
-                <label class="textnext"><input class="input-box next" type="radio" name="next_message" value="next">
-                    Next</label>
-    
-            </div>
-        </div>
-        <div class="question">
-            <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png" alt="back" /> </div>
-            <h2>To send you your results and recommendations regarding your therapist, please fill in the field below:</h2>
-            <div class="l-container">
-                <input type="email" required name="emails" rows="4" cols="50" placeholder="Email"></textarea>
-                
-                <div class="alt">
-                   
+   <footer>
+    <div class="footer">
+        
+        <ul style="padding-top: 10px;" class="footer-ul">
+            <h3 class="question-call">
+                <div class="flexalign">
+                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png" alt="info--v1" />
                     <span>
-                        By clicking 'View Results,' you agree to the <a style="font-weight: 600;color: #1d71c0;" href="#">terms and conditions</a>.
-                        <br><br>
-                        If you have any questions or need assistance, feel free to contact us at <a
-                            style="font-weight: 600;color: #1d71c0;" href="mailto:info@yourmytherapist.com">info@yourmytherapist.com</a>
+                        If you are in a crisis or any other person may be in danger - don't use this site. <a href="#"
+                            style="color: #0084ff;">These
+                            resources</a> can provide you
+                        with
+                        immediate help.
                     </span>
                 </div>
-                <div class="navigation">
-                
-                    <button type="submit">View Results</button>
-                </div>
-            </div>
-        </div>
-       
-    </form>
-   
-   </div>
-   
+            </h3>
 
+            <li><a href="#">FAQ</a></li>
+
+            <li><a href="#">Sharing Settings</a></li>
+
+            <li><a href="#">Mail</a></li>
+
+            <li><a href="#">Home</a></li>
+    
+    
+            <li><a href="#">Help Center</a></li>
+
+            <li><a href="#">Web Accessibility</a></li>
+
+            <li><a href="#">Donate Me</a></li>
+
+            <li><a href="#">About Me</a></li>
+    
+    
+            <li><a href="#">Terms & Conditions</a></li>
+
+            <li><a href="#">Cookie Preferences</a></li>
+
+            <li><a href="#">Book a Session</a></li>
+
+            <li><a href="#">Prices</a></li>
+    
+    
+            <li><a href="#">Privacy Policy</a></li>
+
+            <li><a href="#">Legal Notices</a></li>
+
+            <li><a href="#">Certificates</a></li>
+
+            <li><a href="#">Services</a></li>
+        </ul>
+        
+        <h3 class="footer-end">
+            © 2024 yourmytherapist.com, All rights reserved.
+        </h3>
+        
+    </div>
+   </footer>
+<script src="script.js"></script>
+  
     <script>
         document.addEventListener('DOMContentLoaded', function () {
                 const form = document.getElementById('survey-form');
@@ -752,6 +945,7 @@
             });
 
     </script>
+    
 </body>
 
 </html>
