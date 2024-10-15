@@ -8,10 +8,10 @@
      background: #fff;
      position: relative;
      font-family: Arial, sans-serif;
-    
+   
 
  }
-body::after{
+body::after {
     content: "";
     position: fixed;
     top: 0;
@@ -20,30 +20,29 @@ body::after{
     width: 100%;
     height: 100vh;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.05;
     background-repeat: no-repeat;
     background-size: cover;
 }
  nav {
-    display: none;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
      position: sticky;
      top: 0;
      z-index: 9999;
     font-size: 22px;
     padding: 15px;
     color: #fff;
-    background: linear-gradient(to left, rgb(0, 132, 255), #407dbe);
+    background: linear-gradient(to top, #01253d, #174868);
  }
-
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
  .container {
-
-     margin: auto;
-     padding: 20px;
-     background: #fff;
-     border-radius: 5px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
  }
  nav a.active{
     border-bottom: 1px solid #fff;
@@ -73,8 +72,8 @@ nav a{
 
      text-align: center;
      background: #fff;
-     color: #353535;
-     padding: 15px 10px;
+     color: #444444;
+     padding: 15px;
      font-size: 16px;
      padding-top: 25px;
      z-index: 99;
@@ -82,22 +81,48 @@ nav a{
 label{
     font-size: 14px !important;
 }
+#survey-form{
+    background: #fff;
+    box-shadow: 0 0 15px #00000010;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.alt {
+    display: flex;
+    background: #6ba2e90a;
+    padding:10px;
+    border: 2px dotted rgba(70, 167, 231, 0.219);
+    border-radius: 8px;
+ 
+    line-height: 20px;
+    color: #303030;
+    font-size: 14px;
+    text-align: left;
+
+}
+.alt img{
+    width: 55px;
+    object-fit: contain;
+}
  .question.active {
      position: relative;
      top: 0;
      left: 0;
      background: #fff;
      display: block;
-     max-width: 400px;
+     max-width: 800px;
      margin: auto;
-     border-radius: 10px;
+    
      max-height: 500px;
-     box-shadow: 0 0 15px #00000010;
+    
      overflow: auto;
      overflow-x: hidden;
      padding-bottom: 50px;
      transition: .5s ease all;
-     animation: eases .3s ease;
+     animation: eases .6s ease;
  }
 
  .l-container {
@@ -113,18 +138,28 @@ label{
  @keyframes eases {
      0% {
          opacity: 0;
-         left: 250px;
+         left: 150px;
      }
+    
 
      100% {
          opacity: 1;
          right: 0;
      }
  }
+.textnext{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: #007bff !important;
+    color: #fff !important;
+   
+    text-align: center;
+    
+}
 
  .navigation {
-
-     bottom: 0;
+     
      display: flex !important;
      align-items: center !important;
      width: 100%;
@@ -135,8 +170,9 @@ label{
 
  button {
      padding: 15px 35px;
-
+    width: 100%;
      border: none;
+     font-weight: 600;
      border-radius: 50px;
      background-color: #007bff;
      color: #fff;
@@ -202,7 +238,20 @@ label{
      transition: .3s ease all;
      resize: none;
  }
-
+input[type="email"]{
+    padding: 15px 20px;
+     border: 1px solid #ccc;
+     border-radius: 50px;
+}
+input[type="email"]:hover{
+background: linear-gradient(to right, #007bff10, #09689410) !important;
+    border: 1px solid #64a6ec50 !important;
+}
+input[type="email"]:focus{
+background: linear-gradient(to right, #007bff20, #09689430) !important;
+    border: 1px solid #64a6ec !important;
+    outline: none;
+}
  * {
      margin: 0;
      padding: 0;
@@ -210,15 +259,13 @@ label{
  }
 
  .progress-bar {
-     
-     padding: 15px;
-     margin-bottom: 30px;
-    background: #014470;
+     padding: 8px;
+    background: #fff;
 
  }
 
  .progress {
-     height: 10px;
+     height: 5px;
      
      background: rgb(0, 132, 255);
      border-radius: 50px;
@@ -236,15 +283,8 @@ label{
 
  h1 {
      padding: 15px 5px;
+     font-size: 26px;
      color: #353535;
- }
-
- .alt {
-     padding: 15px 5px;
-     line-height: 30px;
-     font-size: 13px;
-     color: #575757;
-     text-align: center;
  }
 
  
