@@ -1,0 +1,254 @@
+ * {
+     font-family: Arial, sans-serif;
+ }
+
+ body {
+   
+    position: relative;
+     background: #fff;
+     position: relative;
+     font-family: Arial, sans-serif;
+    
+
+ }
+body::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(https://images.unsplash.com/photo-1707209857232-4feaa7a4a036?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ nav {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+     position: sticky;
+     top: 0;
+     z-index: 9999;
+    font-size: 22px;
+    padding: 15px;
+    color: #fff;
+    background: linear-gradient(to left, rgb(0, 132, 255), #407dbe);
+ }
+
+ .container {
+
+     margin: auto;
+     padding: 20px;
+     background: #fff;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ nav a.active{
+    border-bottom: 1px solid #fff;
+ }
+nav a{
+    color: #fff;
+    text-decoration: none;
+    
+    padding: 10px 15px;
+    
+    font-size: 16px;
+}
+ h1 {
+     text-align: center;
+ }
+
+ .question {
+     display: none;
+
+ }
+
+ h2,
+ h3 {
+     position: sticky;
+     top: 0;
+     left: 0;
+
+     text-align: center;
+     background: #fff;
+     color: #353535;
+     padding: 15px 10px;
+     font-size: 16px;
+     padding-top: 25px;
+     z-index: 99;
+ }
+label{
+    font-size: 14px !important;
+}
+ .question.active {
+     position: relative;
+     top: 0;
+     left: 0;
+     background: #fff;
+     display: block;
+     max-width: 400px;
+     margin: auto;
+     border-radius: 10px;
+     max-height: 500px;
+     box-shadow: 0 0 15px #00000010;
+     overflow: auto;
+     overflow-x: hidden;
+     padding-bottom: 50px;
+     transition: .5s ease all;
+     animation: eases .3s ease;
+ }
+
+ .l-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+     padding: 15px;
+ }
+ .l-container label{
+    display: block !important;
+ }
+
+ @keyframes eases {
+     0% {
+         opacity: 0;
+         left: 250px;
+     }
+
+     100% {
+         opacity: 1;
+         right: 0;
+     }
+ }
+
+ .navigation {
+
+     bottom: 0;
+     display: flex !important;
+     align-items: center !important;
+     width: 100%;
+     margin-right: 15px;
+     justify-content: end !important;
+
+ }
+
+ button {
+     padding: 15px 35px;
+
+     border: none;
+     border-radius: 50px;
+     background-color: #007bff;
+     color: #fff;
+     cursor: pointer;
+ }
+
+ input[type="radio"] {
+     display: none;
+ }
+
+ button.prev {
+     background-color: #b1bbc4;
+ }
+
+ .question.active select {
+     padding: 15px;
+     border-radius: 50px;
+     width: 100%;
+     margin: 25px 0;
+ }
+
+ .question label {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     transition: .2s ease;
+     border: 1px solid #fff;
+ }
+
+ .question label:hover {
+     border: 1px solid #64a6ec;
+     transform: scale(1.02);
+     cursor: pointer;
+     z-index: 0;
+ }
+
+ .question label {
+     background: #f4f9ff;
+     padding: 15px;
+     color: #407dbe;
+     
+     border-radius: 50px;
+ }
+
+ .selected {
+     background: linear-gradient(to right, #007bff20, #09689430) !important;
+     border: 1px solid #64a6ec !important;
+
+ }
+
+ button:hover {
+     opacity: 0.8;
+ }
+
+ textarea {
+     width: calc(100%);
+     height: 250px;
+     padding: 15px 20px;
+     border: 1px solid #ccc;
+     outline: 0;
+     border-radius: 15px;
+     margin-bottom: 30px;
+     transition: .3s ease all;
+     resize: none;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .progress-bar {
+     
+     padding: 15px;
+     margin-bottom: 30px;
+    background: #014470;
+
+ }
+
+ .progress {
+     height: 10px;
+     
+     background: rgb(0, 132, 255);
+     border-radius: 50px;
+     transition: .3s ease;
+ }
+
+ textarea:focus {
+     border: 1px solid rgb(0, 132, 255);
+ }
+
+ .info-bar {
+     max-width: 800px;
+     margin: 30px auto;
+ }
+
+ h1 {
+     padding: 15px 5px;
+     color: #353535;
+ }
+
+ .alt {
+     padding: 15px 5px;
+     line-height: 30px;
+     font-size: 13px;
+     color: #575757;
+     text-align: center;
+ }
+
+ 
+ 
+ form{
+    margin-bottom: 30px;
+ }
