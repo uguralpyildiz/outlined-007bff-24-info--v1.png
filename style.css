@@ -75,7 +75,7 @@ nav a{
      color: #444444;
      padding: 15px;
      font-size: 16px;
-     padding-top: 25px;
+   
      z-index: 99;
  }
 label{
@@ -116,7 +116,7 @@ label{
      max-width: 800px;
      margin: auto;
     
-     max-height: 500px;
+     max-height: 450px;
     
      overflow: auto;
      overflow-x: hidden;
@@ -182,10 +182,25 @@ label{
  input[type="radio"] {
      display: none;
  }
-
- button.prev {
-     background-color: #b1bbc4;
+ .question{
+    position: relative;
  }
+.prev{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 14px;
+    color: #0a72e0;
+    background: #0a72e010;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
  .question.active select {
      padding: 15px;
