@@ -120,7 +120,7 @@ label{
     
      overflow: auto;
      overflow-x: hidden;
-     padding-bottom: 50px;
+     padding-bottom: 30px;
      transition: .5s ease all;
      animation: eases .5s ease;
  }
@@ -134,7 +134,18 @@ label{
  .l-container label{
     display: block !important;
  }
-
+.footer{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #054a79;
+    padding: 15px 5px;
+}
  @keyframes eases {
      0% {
          opacity: 0;
@@ -298,7 +309,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
  }
 
  h1 {
-     padding: 15px 5px;
+     padding-bottom: 30px;
      font-size: 26px;
      color: #353535;
  }
