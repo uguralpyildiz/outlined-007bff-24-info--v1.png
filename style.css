@@ -24,14 +24,14 @@ body::after {
     width: 100%;
     height: 100vh;
     z-index: -1;
-    opacity: 0.93;
+    opacity: 0.85;
     background-repeat: no-repeat;
     background-size: cover;
 }
 nav{
     position: sticky;
     top: 0;
-    padding: 10px;
+  
     z-index: 9999;
 background: linear-gradient(320deg, #041c3a 65%, #041f3f 65%);
 }
@@ -257,7 +257,7 @@ i {
     background: #007bff;
     color: #fff;
     
-    border-radius: 70px;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     z-index: 1;
@@ -349,11 +349,11 @@ i {
 
 @keyframes flashEffect {
     0% {
-        left: -150px;
+        left: -250px;
     }
 
     100% {
-        left: 150px;
+        left: 250px;
     }
 }
 
@@ -459,7 +459,12 @@ i {
 }
 
 @media only screen and (max-width: 1150px) {
-
+    .logo span{
+        font-size: 18px;
+    }
+    .logo img{
+        width: 35px;
+    }
     .submit-title {
             font-size: 18px !important;
         }
@@ -750,7 +755,7 @@ i {
  .get-started{
     position: relative;
     background: #096eda;
-    border-radius: 50px;
+    border-radius: 5px;
  }
  .get-started{
     content: "";
@@ -763,8 +768,8 @@ i {
  }
  .hero{
     position: relative;
-    padding-bottom: 80px;
-   
+    padding-bottom: 50px;
+  
     transition: .3s ease alls;
     
     
@@ -916,7 +921,7 @@ label{
     width: 100%;
      border: none;
      font-weight: 600;
-     border-radius: 50px;
+     border-radius: 5px;
      background-color: #007bff;
      color: #fff;
      cursor: pointer;
@@ -945,13 +950,7 @@ label{
 }
 
 
- .question.active select {
-     padding: 15px;
-     border-radius: 50px;
-     width: 100%;
-     margin: 25px 0;
- }
-
+ 
  .question label {
      display: flex;
      align-items: center;
@@ -966,13 +965,19 @@ label{
      cursor: pointer;
      z-index: 0;
  }
+ .question label:active {
+     border: 1px solid #64a6ec;
+     transform: scale(0.95);
+     cursor: pointer;
+     z-index: 0;
+ }
 
  .question label {
      background: #f4f9ff;
      padding: 12px 20px;
      color: #407dbe;
      
-     border-radius: 50px;
+     border-radius: 5px;
  }
 
 .form-submit-page-container{
@@ -995,6 +1000,7 @@ label{
     z-index: 0;
     overflow: hidden;
     margin-bottom: 15px;
+    margin-top: 60px;
 }
 .form-submit-page-container::before{
     content: "";
@@ -1024,13 +1030,17 @@ label{
      transition: .5s ease all;
     animation: eases .5s ease;
  }
+ .comment-section{
+    height: 500px;
+    background: #fff;
+ }
 .submit-title{
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 10px 0;
     font-size: 28px;
-    margin-bottom: 15px;
+   
     font-weight: 600;
 }
 .submit-alt{
@@ -1039,14 +1049,37 @@ label{
     color: #000000b6;
     font-weight: 400;
 }
+#svg-loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loaderab{
+    position: absolute !important;
+    top: 0 !important;
+}
 .submit-price{
     display: flex;
-    align-items: start;
-    gap: 5px;
+    align-items: center;
+    
     font-size: 32px;
     font-weight: 600;
-    margin-top: 15px;
     margin-bottom: 5px;
+}
+.price-text-sale{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: line-through;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1px 10px;
+}
+.price-text{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .bg-white{
     background: #007bff10;
@@ -1081,7 +1114,7 @@ label{
 .submit-button a{
     padding: 15px 20px;
     background: #007bff;
-    border-radius: 50px;
+    border-radius: 5px;
     text-decoration: none;
     color: #fff;
 }
@@ -1103,7 +1136,7 @@ label{
 input[type="email"]{
     padding: 15px 20px;
      border: 1px solid #ccc;
-     border-radius: 50px;
+     border-radius: 5px;
 }
 input[type="email"]:hover{
 background: linear-gradient(to right, #007bff10, #09689410) !important;
@@ -1130,7 +1163,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
      height: 5px;
      
      background: rgb(0, 132, 255);
-     border-radius: 50px;
+     border-radius: 5px;
      transition: .3s ease;
  }
 
@@ -1160,7 +1193,9 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
     margin: auto;
  }
 
- 
+ footer{
+    background: linear-gradient(to right, #091e38, #123a6e);
+ }
 
  .footer-ul {
     display: flex;
@@ -1169,24 +1204,19 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
      display: block;
      max-width: 1200px;
     margin: auto;
-    
+    color: #f5f5f5 !important;
  }
 
  .footer-ul li {
      display: inline-block;
      align-items: center;
      width: calc(25% - 2.5px);
-    
-    
-     
-     
-     
  }
 
  .footer-ul li a {
     display: flex;
      text-decoration: none;
-     color: #787878;
+     color: #f5f5f5;
      font-size: 13px;
      padding: 10px 0;
     margin: 5px 0;
@@ -1201,7 +1231,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
     font-size: 14px !important;
     padding:20px 10px !important;
     display: flex;
-    color: #353535 !important;
+    color: #fff !important;
     align-items: center;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -1237,7 +1267,35 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
      background: #00000005;
      text-align: center;
      font-size: 13px;
-     color: #787878;
-     border-top:1px solid #f5f5f5;
+     color: #f5f5f5;
+     border-top:1px solid #0b3261;
  }
+ 
+ .comment-title{
+    padding: 15px;
+ }
+ 
+
+ select,.form-control option{
+    padding: 10px;
+    font-size: 16px;
+ }
+select{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select:hover,select:focus {
+     background: linear-gradient(to right, #007bff10, #09689410) !important;
+     border: 1px solid #64a6ec50 !important;
+     outline: 0;
+}
+
+
+
+
+
+ 
+
  
