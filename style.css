@@ -9,7 +9,7 @@ html{
 
  body {
     position: relative;
-    background: url(https://images.unsplash.com/photo-1548159417-f283998827c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background: url(https://raw.githubusercontent.com/uguralpyildiz/yourmytherapist.com/refs/heads/main/img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
  
@@ -20,7 +20,7 @@ body::after {
     position: fixed;
     top: 0;
     left: 0;
-    background: #F4F9FF;
+    background: #fff;
     width: 100%;
     height: 100vh;
     z-index: -1;
@@ -222,6 +222,9 @@ i {
 
 .p5 {
     animation: link-anim ease-in-out 1.3s 1;
+}
+.p6 {
+    animation: link-anim ease-in-out 1.4s 1;
 }
 
 
@@ -795,7 +798,7 @@ i {
     padding: 10px;
  }
  nav a.active{
-    background: #ffffff10;
+    background: #ffffff15;
     border-radius: 5px;
  }
 nav a{
@@ -952,19 +955,7 @@ label{
     }
  }
 
- @keyframes eases {
-     0% {
-         opacity: 0;
-         top: 15px;
-     }
-    
-
-     100% {
-         opacity: 1;
-        
-         right: 0;
-     }
- }
+ 
 .textnext{
     display: flex;
     align-items: center;
@@ -1158,8 +1149,7 @@ label{
     gap: 5px;
 }
 .bg-white{
-    background: #041F3F;
-    border: 4px solid #053877;
+    background: linear-gradient(to right, #091e38, #123a6e);
     box-shadow: 0 0 15px #00000020;
 }
 .bg-white::before {
@@ -1271,7 +1261,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
  }
 
  footer{
-    background: linear-gradient(to right, #091e38, #123a6e);
+    background: linear-gradient(to right, #041C3A, #123a6e);
  }
 
  .footer-ul {
@@ -1356,20 +1346,75 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
  select,.form-control option{
     padding: 10px;
     font-size: 16px;
+    
  }
 select{
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
+   
 }
 
 select:hover,select:focus {
      background: linear-gradient(to right, #007bff10, #09689410) !important;
      border: 1px solid #64a6ec50 !important;
      outline: 0;
+     
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.emergency-table{   
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #007bff10;
+    border: 2px dotted #007bff10;
+    animation: eases .5s ease;
 }
 
-
+.emergency-table span{
+    font-weight: 400;
+}
+.emergency-table strong{
+    color: #407dbe;
+    font-weight: 400;
+}
+.country{
+   
+    background: transparent;
+    
+    
+    border: none;
+}
+.country span{
+    font-size: 22px;
+    color: #353535;
+    text-decoration: underline;
+        text-decoration-color: #0084ff;
+    font-weight: 800 !important;
+}
+.link-resources{
+    
+    padding: 10px 0;
+}
+.link-resources a{
+    border: 1px solid #007bff;
+    color: #007bff !important;
+    padding: 7px 15px;
+    border-radius: 5px;
+   
+    transition: .3s ease all;
+}
+.emergency-table a:hover{
+    background: #007bff;
+    color: #fff !important;
+}
 .about-container{
     display: flex;
     align-items: start;
@@ -1487,12 +1532,8 @@ select:hover,select:focus {
     left: 0;
     width: 100%;
     height: 50%;
-    /* background: url(https://i.ibb.co/fSzTrmp/image.png); */
-    background: #031e3a;
+background: linear-gradient(320deg, #041c3a 45%, #041f3f 45%);
     border-radius: 5px;
-    background-repeat: no-repeat;
-    background-size: bottom;
-    background-position: center;
     z-index: -2;
 }
 
@@ -1630,3 +1671,16 @@ select:hover,select:focus {
  
 
  
+@keyframes eases {
+    0% {
+        opacity: 0;
+        top: 15px;
+    }
+
+
+    100% {
+        opacity: 1;
+
+        right: 0;
+    }
+}
