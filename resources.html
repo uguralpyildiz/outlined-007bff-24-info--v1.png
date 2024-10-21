@@ -88,7 +88,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#contact" class="nav-link" >
+                        <a href="contact.html" class="nav-link" >
                             <div class="link-anim-set">
                                 <div class="link-anim-set-p p6">
                                     <div class="link-numbers">05</div><span class="slash">//</span>Contact
@@ -105,9 +105,10 @@
                     </div>
     
                 </div>
-                <button class="menu-btn"><i class="fa-solid fa-bars-staggered"></i></button>
+                <button class="menu-btn"><img width="32" height="32" src="https://img.icons8.com/ffffff/windows/32/menu--v1.png" alt="menu--v1" /></button>
             </div>
         </div>
+    <div class="overlay-navbar"></div>
     </nav>
 
    
@@ -115,18 +116,18 @@
         <div class="container-default">
             <div class="about-container">
                <div class="about-sec">
-                <div class="about-sec-content">
+                <div class="about-sec-content resources-container">
                     <div class="page-about">
                         RESOURCES
                     </div>
                     <h1 style="font-size: 32px;">Get help <span style="text-decoration: underline; text-decoration-color: #0084ff;">now</span></h1>
                     <div
-                        style="display: flex;align-items: center;justify-content: space-between; width: 100%; gap:10px; font-size: 14px; margin: 10px 0;">
-                        <div style="background-color: #fff; box-shadow: 0 0 15px #00000010; padding: 10px; border-radius: 5px;" class="sharing-container-resources">
-                            <i class="fa-solid fa-eye" style="color: #0084ff;"></i> 57.3K Views
+                        style="display: flex;align-items: center; width: 100%; gap:10px; font-size: 14px; margin: 10px 0;">
+                        <div class="sharing-container-resources">
+                        <img width="16" height="16" src="https://img.icons8.com/0084ff/fluency-systems-filled/50/visible.png" alt="visible" /> 57.3K Views
                         </div>
-                        <a href="#share" style="background-color: #fff; box-shadow: 0 0 15px #00000010; padding: 10px; border-radius: 5px;" class="sharing-container-resources">
-                            <i class="fa-solid fa-share-from-square" style="color: #0084ff;"></i> Share
+                        <a href="#share" class="sharing-container-resources sharebtn-resources">
+                            <img width="24" height="24" src="https://img.icons8.com/0084ff/windows/32/share-rounded.png" alt="share-rounded" /> 
                         </a>
                     </div>
                     <form style="max-width: 100%; margin-top: 10px;" id="survey-form" action="https://formspree.io/f/myzyynjb" method="post" target="dummyframe">
@@ -135,9 +136,11 @@
                         <div class="question" style="display: block; max-width: 100%;">
                     
                             <div class="l-container">
-                                <select id="country" onchange="showEmergencyNumbers()">
-                                    <option value="Country" selected disabled>Find a Country</option>
-                                </select>
+                                <div class="proselect">
+                                    <select id="country" onchange="showEmergencyNumbers()">
+                                        <option value="Country" selected disabled>Find a Country</option>
+                                    </select>
+                                </div>
                                 <div class="alt" style="display: flex; align-items: center;">
                                 
                                     <img style="width: 24px;" width="24" height="24"

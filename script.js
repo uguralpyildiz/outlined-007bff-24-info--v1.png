@@ -34,11 +34,13 @@ const menuBtn = document.querySelector(".menu-btn");
 const navbarLinksM = document.querySelector(".nav-links");
 const navLinkContainer = document.querySelector(".nav-link-container");
 const downloadBtn = document.querySelector(".download-cv");
+const overlay = document.querySelector(".overlay-navbar");
 
 
 
 document.addEventListener("click", (e) => {
     target = e.target.parentNode;
+    targeto = e.target;
 
     if (target === menuBtn) {
         navbarLinksM.classList.toggle("active-nav")
@@ -47,13 +49,15 @@ document.addEventListener("click", (e) => {
         setTimeout(() => {
             navbarLinksM.classList.toggle("anim-navs")
         }, 100);
+        overlay.style.display = "flex"
     }
 
-    if (target != menuBtn && target != navLinkContainer && target != downloadBtn && target != navbarLinksM) {
+    if (targeto === overlay) {
         setTimeout(() => {
             navbarLinksM.classList.remove("active-nav")
         }, 100);
         navbarLinksM.classList.remove("anim-navs")
+        overlay.style.display ="none"
 
     }
 
