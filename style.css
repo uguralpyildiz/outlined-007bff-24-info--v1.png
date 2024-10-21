@@ -261,7 +261,7 @@ i {
     background: #007bff;
     color: #fff;
     
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
     z-index: 1;
@@ -529,7 +529,7 @@ i {
         padding:0;
         font-size: 18px;
        color: #fff;
-        border-radius: 5px;
+        border-radius: 6px;
         
         width: 100%;
     }
@@ -777,7 +777,7 @@ i {
  .get-started{
     position: relative;
     background: #096eda;
-    border-radius: 5px;
+    border-radius: 6px;
  }
  .get-started{
     content: "";
@@ -818,7 +818,7 @@ i {
  }
  nav a.active{
     background: #ffffff15;
-    border-radius: 5px;
+    border-radius: 6px;
  }
 nav a{
     color: #fff;
@@ -859,7 +859,7 @@ label{
 #survey-form{
     background: #fff;
     box-shadow: 0 0 15px #00000010;
-    border-radius: 5px;
+    border-radius: 6px;
     max-width: 500px;
     margin: auto;
     overflow: hidden;
@@ -870,7 +870,7 @@ label{
     background: #6ba2e90a;
     padding:10px;
     border: 2px dotted rgba(70, 167, 231, 0.219);
-    border-radius: 5px;
+    border-radius: 6px;
     font-family: "Outfit", sans-serif !important;
     
     color: #303030;
@@ -888,7 +888,7 @@ label{
     flex-wrap: wrap;
 }
 .about-tag{
-    border-radius: 5px;
+    border-radius: 6px;
    background: linear-gradient(320deg, #007bff05     65%, #007bff05  65%);
     color: #353535;
     border: 2px dotted #007bff10;
@@ -939,7 +939,7 @@ label{
     
 
     margin-bottom: 5px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
  .l-container {
@@ -1001,7 +1001,7 @@ label{
     width: 100%;
      border: none;
      font-weight: 600;
-     border-radius: 5px;
+     border-radius: 6px;
      background-color: #007bff;
      color: #fff;
      cursor: pointer;
@@ -1061,7 +1061,7 @@ label{
      padding: 12px 20px;
      color: #407dbe;
      
-     border-radius: 5px;
+     border-radius: 6px;
  }
 
 .form-submit-page-container{
@@ -1071,7 +1071,7 @@ label{
     display: flex;
     
     background: url(https://i.ibb.co/FB45RMh/Whats-App-Image-2024-10-16-at-00-29-43.jpg);
-    border-radius: 5px;
+    border-radius: 6px;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -1135,10 +1135,14 @@ label{
     font-weight: 400;
     
 }
-#svg-loading{
+#svg-loading,#submitBtn{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s ease transform;
+}
+#submitBtn:active,#svg-loading:active{
+    transform: scale(0.9);
 }
 #loaderab{
     position: absolute !important;
@@ -1157,7 +1161,7 @@ label{
     align-items: center;
     justify-content: start;
     text-decoration: line-through;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 16px;
     font-weight: 400;
     padding: 1px 10px;
@@ -1200,7 +1204,7 @@ label{
 .submit-button a{
     padding: 15px 20px;
     background: #007bff;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
     color: #fff;
 }
@@ -1214,7 +1218,7 @@ label{
      padding: 15px 20px;
      border: 1px solid #ccc;
      outline: 0;
-     border-radius: 5px;
+     border-radius: 6px;
      margin-bottom: 30px;
      transition: .3s ease all;
      resize: none;
@@ -1222,7 +1226,7 @@ label{
 input[type="email"]{
     padding: 15px 20px;
      border: 1px solid #ccc;
-     border-radius: 5px;
+     border-radius: 6px;
 }
 input[type="email"]:hover{
 background: linear-gradient(to right, #007bff10, #09689410) !important;
@@ -1236,7 +1240,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
 input[type="text"]{
     padding: 15px 20px;
      border: 1px solid #ccc;
-     border-radius: 5px;
+     border-radius: 6px;
 }
 input[type="text"]:hover{
 background: linear-gradient(to right, #007bff10, #09689410) !important;
@@ -1262,7 +1266,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
     position: fixed;
     top: 0;
     left: 0;
-    border-radius: 5px;
+    border-radius: 6px;
     height: 100vh !important;
     width: 100vw !important;
     z-index: -2;
@@ -1277,6 +1281,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
     background: transparent;
     z-index: -1;
 }
+
 .page-header h1{
     padding-bottom: 0 !important;
     text-align: left !important;
@@ -1303,7 +1308,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
      height: 5px;
      
      background: rgb(0, 132, 255);
-     border-radius: 5px;
+     border-radius: 6px;
      transition: .3s ease;
  }
 
@@ -1373,7 +1378,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
     display: flex;
     color: #fff !important;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-bottom: 15px;
     padding: 0;
     border: 1px dotted #007bff50;
@@ -1423,7 +1428,7 @@ background: linear-gradient(to right, #007bff20, #09689430) !important;
  }
 select{
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
    
 }
@@ -1445,7 +1450,7 @@ select:hover,select:focus {
     flex-wrap: wrap;
     gap: 5px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     background: #007bff10;
     border: 2px dotted #007bff10;
     animation: eases .5s ease;
@@ -1469,7 +1474,7 @@ select:hover,select:focus {
     font-size: 22px;
     color: #353535;
     text-decoration: underline;
-        text-decoration-color: #0084ff;
+        text-decoration-color: #007BFF;
     font-weight: 800 !important;
 }
 .link-resources{
@@ -1480,7 +1485,7 @@ select:hover,select:focus {
     border: 1px solid #007bff;
     color: #007bff !important;
     padding: 7px 15px;
-    border-radius: 5px;
+    border-radius: 6px;
    
     transition: .3s ease all;
 }
@@ -1507,7 +1512,7 @@ select:hover,select:focus {
     display: flex;
     flex-direction: column;
     
-    border-radius: 5px;
+    border-radius: 6px;
     width: 250px;
     height: 100%;
     overflow: hidden;
@@ -1551,7 +1556,7 @@ select:hover,select:focus {
     display: flex;
     margin-top: 20px;
     background: #ffffff40;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 10px;
     gap: 10px;
 }
@@ -1564,10 +1569,56 @@ select:hover,select:focus {
     flex-direction: column;
     padding: 5px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 6px;
     overflow: hidden;
    background: #ffffff40;
  
+}
+select{
+    background: #fff !important; 
+}
+
+.user-text-overlay{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #00000053;
+    z-index: 11000;
+    transition: .3s ease all;
+}
+.user-text-message{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 50px;
+    width: 200px;
+    max-width: 300px;
+    border-radius: 5px;
+}
+.user-text-message-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.close-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+.download-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .social-links a{
@@ -1579,11 +1630,12 @@ select:hover,select:focus {
     top: 55%;
     z-index: 9;
     text-decoration: none;
-    color: #031e3a;
-    border-radius: 50%;
+    color: #007bff;
+    border-radius: 6px;
+    box-shadow: 0 0 15px #00000010;
     font-size: 18px;
-    background: #05387720;
-    border: 1px solid #00000020;
+    background: #fff;
+    border: 1px solid #fff;
     width: 40px;
     height: 40px;
 }
@@ -1605,11 +1657,16 @@ select:hover,select:focus {
     left: 0;
     width: 100%;
     height: 50%;
-background: linear-gradient(320deg, #041c3a 45%, #041f3f 45%);
-    border-radius: 5px;
+background: #041f3fc2;
+    border-radius: 6px;
     z-index: -2;
 }
-
+.img-banner iframe {
+    position: absolute;
+    height: 50%;
+    border-radius: 6px;
+    z-index: -3;
+}
 .img-base{
     width: 250px;
 }
@@ -1621,7 +1678,7 @@ background: linear-gradient(320deg, #041c3a 45%, #041f3f 45%);
     border: 1px solid #007bff30;
     color: #353535;
     background: transparent;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
     transition: .3s ease all;
 }
@@ -1638,7 +1695,7 @@ background: linear-gradient(320deg, #041c3a 45%, #041f3f 45%);
     width: 200px;
     margin-left: 20px;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     z-index: 99;
     padding: 5px;
     background: #E0E4EC;
@@ -1662,7 +1719,7 @@ background: linear-gradient(320deg, #041c3a 45%, #041f3f 45%);
     font-size: 126px;
     z-index: -1;
     color: #071e36;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 @media screen and (max-width:1200px) {
     nav a{
@@ -1766,7 +1823,7 @@ background: linear-gradient(320deg, #041c3a 45%, #041f3f 45%);
         box-shadow: 0 0 15px #00000010;
     height: 35px;
     padding: 0 10px;
-        border-radius: 5px;
+        border-radius: 6px;
     display: flex;
     align-items: center;
     gap: 10px;

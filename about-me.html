@@ -39,7 +39,7 @@
             <div class="nav-title">
                 <a href="#home" class="logo">
                     <img width="55px" src="logo.png" alt="logo"> <span>your<span
-                            style="color: #0084ff;">my</span>therapist.com</span>
+                            style="color: #007BFF;">my</span>therapist.com</span>
                 </a>
             </div>
     
@@ -48,7 +48,7 @@
                     <div class="nav-menu-header">
                         <a href="#home" class="logo">
                             <img width="55px" src="logo.png" alt="logo"> <span>your<span
-                                    style="color: #0084ff;">my</span>therapist.com</span>
+                                    style="color: #007BFF;">my</span>therapist.com</span>
                         </a>
                     </div>
                     <div id="nth" class="nav-links-effect-container">
@@ -100,8 +100,7 @@
     
                     </div>
                     <div class="download-center mobilecenter">
-                        <a href="index.html" id="downloadCv" class="download-cv"><span class="download-text">Get
-                                Started</span></a>
+                        <a href="index.html" id="downloadCv" class="download-cv"><div class="download-text"><span>Get Started</span><img width="16" height="16" src="https://img.icons8.com/ffffff/android/24/up-right-arrow.png" alt="up-right-arrow" /></div></a>
                     </div>
     
                 </div>
@@ -116,6 +115,7 @@
          
                 <div class="img-container">
                     <div class="img-banner">
+                        <iframe style="width: 100%;" height="100%" src="https://arkadia.xyz/" frameborder="0"></iframe>
                         <div class="img-container-aboutme">
                             <div class="img-base">
                                 <img src="img/about.png" alt="ornek"><br>
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="mailto:info@yourmytherapist.com"> <i class="fa-solid fa-envelope"></i> </a>
+                        <a href="mailto:info@yourmytherapist.com"> <i class="fa-regular fa-envelope"></i> </a>
                     </div>
                 </div>
                 
@@ -161,6 +161,28 @@
                     </span>
                 </a>
             </div>
+            <div class="user-text-overlay easesanim">
+                <div class="user-text-message">
+                    <span class="close-btn"><img width="16" height="16" src="https://img.icons8.com/ios-filled/50/delete-sign--v1.png" alt="delete-sign--v1" /></span>
+                    <div class="user-text-message-content">
+                        <svg style="position:absolute" version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 40 40"
+                            enable-background="new 0 0 40 40" xml:space="preserve">
+                            <path opacity="0.2" fill="#007BFF"
+                                d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                                                            s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                                                            c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+                            <path fill="#007BFF" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012v3.312
+                                                            C22.32,8.481,24.301,9.057,26.013,10.047z">
+                                <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+                                    dur="0.5s" repeatCount="indefinite" />
+                            </path>
+                        </svg><br>
+                        
+                    </div>
+                </div>
+            </div>
+           
         </div>
     </section>
     
@@ -172,7 +194,7 @@
                     <div class="page-about">
                         ABOUT ME
                     </div>
-                    <h1>Let Me Introduce <span style="text-decoration: underline; text-decoration-color: #0084ff;">Myself</span></h1>
+                    <h1>Let Me Introduce <span style="text-decoration: underline; text-decoration-color: #007BFF;">Myself</span></h1>
                     <p>Hi, I'm Saphira, a licensed psychologist and mental health counselor with a deep passion for helping individuals
                         <strong>uncover their true potential and live authentically</strong>.<br> With years of experience in both psychology
                         and music,
@@ -220,7 +242,7 @@
                             SPECIALTIES
                         </div>
                     <div class="padding-setting-about-us">
-                        <h1>Tailored <span style="text-decoration: underline; text-decoration-color: #0084ff;">expertise</span> for you</h1>
+                        <h1>Tailored <span style="text-decoration: underline; text-decoration-color: #007BFF;">expertise</span> for you</h1>
                         <div class="about-tag-container">
                             <div class="about-tag">Relationships</div>
                             <div class="about-tag">Childhood trauma</div>
@@ -335,7 +357,7 @@
                             alt="info--v1" />
                         <span>
                             If you are in a crisis or any other person may be in danger - don't use this site. <a href="resources.html"
-                                style="color: #0084ff;">These
+                                style="color: #007BFF;">These
                                 resources</a> can provide you
                             with
                             immediate help.
@@ -389,7 +411,45 @@
    </div>
 <script src="script.js"></script>
 <script>document.getElementById("name").innerText = "Şahsenem Saphira";</script>
-    
+    <script>
+        const userTexts = document.querySelectorAll('.user-text');
+
+        const closeBtn = document.querySelector('.close-btn');
+        const overdigger = document.querySelector('.user-text-overlay');
+
+        // Her user-text öğesine tıklama olayını ekle
+        userTexts.forEach(userText => {
+            userText.addEventListener('click', () => {
+               overdigger.style.display = 'flex';
+            });
+        });
+
+        //overdigger'e tıklama olayını ekle
+       overdigger.addEventListener('click', (event) => {
+            if (event.target ===overdigger) {
+
+               overdigger.style.top = '-15px'
+               overdigger.style.opacity = '0'
+                setTimeout(() => {
+                   overdigger.style.display = 'none'
+                   overdigger.style.top = ''
+                   overdigger.style.opacity = ''
+                }, 300);
+            }
+        });
+
+        // Kapatma butonuna tıklama olayını ekle
+        closeBtn.addEventListener('click', (event) => {
+            event.stopPropagation(); // Bu tıklamadaoverdigger'i kapatmaz
+           overdigger.style.top = '-15px'
+           overdigger.style.opacity = '0'
+            setTimeout(() => {
+               overdigger.style.display = 'none'
+               overdigger.style.top = ''
+               overdigger.style.opacity = ''
+            }, 300);
+        });
+    </script>
 </body>
 
 </html>

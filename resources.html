@@ -39,7 +39,7 @@
             <div class="nav-title">
                 <a href="#home" class="logo">
                     <img width="55px" src="logo.png" alt="logo"> <span>your<span
-                            style="color: #0084ff;">my</span>therapist.com</span>
+                            style="color: #007BFF;">my</span>therapist.com</span>
                 </a>
             </div>
     
@@ -48,7 +48,7 @@
                     <div class="nav-menu-header">
                         <a href="#home" class="logo">
                             <img width="55px" src="logo.png" alt="logo"> <span>your<span
-                                    style="color: #0084ff;">my</span>therapist.com</span>
+                                    style="color: #007BFF;">my</span>therapist.com</span>
                         </a>
                     </div>
                     <div id="nth" class="nav-links-effect-container">
@@ -100,8 +100,7 @@
     
                     </div>
                     <div class="download-center mobilecenter">
-                        <a href="index.html" id="downloadCv" class="download-cv"><span class="download-text">Get
-                                Started</span></a>
+                        <a href="index.html" id="downloadCv" class="download-cv"><div class="download-text"><span>Get Started</span><img width="16" height="16" src="https://img.icons8.com/ffffff/android/24/up-right-arrow.png" alt="up-right-arrow" /></div></a>
                     </div>
     
                 </div>
@@ -120,15 +119,36 @@
                     <div class="page-about">
                         RESOURCES
                     </div>
-                    <h1 style="font-size: 32px;">Get help <span style="text-decoration: underline; text-decoration-color: #0084ff;">now</span></h1>
+                    <h1 style="font-size: 32px;">Get help <span style="text-decoration: underline; text-decoration-color: #007BFF;">now</span></h1>
                     <div
                         style="display: flex;align-items: center; width: 100%; gap:10px; font-size: 14px; margin: 10px 0;">
                         <div class="sharing-container-resources">
-                        <img width="16" height="16" src="https://img.icons8.com/0084ff/fluency-systems-filled/50/visible.png" alt="visible" /> 57.3K Views
+                        <img width="16" height="16" src="https://img.icons8.com/007BFF/fluency-systems-filled/50/visible.png" alt="visible" /> 57.3K Views
                         </div>
-                        <a href="#share" class="sharing-container-resources sharebtn-resources">
-                            <img width="24" height="24" src="https://img.icons8.com/0084ff/windows/32/share-rounded.png" alt="share-rounded" /> 
+                        <a href="#share-this-content" class="sharing-container-resources sharebtn-resources" id="shareButton">
+                            <img width="24" height="24" src="https://img.icons8.com/007BFF/windows/32/share-rounded.png" alt="share-rounded" />
                         </a>
+                        <script>
+                            const shareButton = document.getElementById('shareButton');
+
+                            shareButton.addEventListener('click', async (event) => {
+                                event.preventDefault(); // To prevent default link behavior
+                                if (navigator.share) {
+                                    try {
+                                        await navigator.share({
+                                            title: 'YourMyTherapist Resources',
+                                            text: 'Check out these helpful resources at YourMyTherapist!',
+                                            url: 'https://yourmytherapist.com/resources',
+                                        });
+                                        console.log('Content shared successfully');
+                                    } catch (error) {
+                                        console.error('Error sharing content:', error);
+                                    }
+                                } else {
+                                    alert('Your browser does not support the Web Share API');
+                                }
+                            });
+                        </script>
                     </div>
                     <form style="max-width: 100%; margin-top: 10px;" id="survey-form" action="https://formspree.io/f/myzyynjb" method="post" target="dummyframe">
                     
@@ -193,7 +213,7 @@
                                         provided by the entities or individuals listed above. Inclusion on this list does not constitute an endorsement by
                                         yourmytherapist.com. The order does not imply any ranking or evaluation. yourmytherapist.com cannot vouch for the
                                         accuracy of
-                                        the contact information; if you discover any inaccuracies, please email us at <a style="text-decoration: underline; color:#0084ff;" href="mailto:info@yourmytherapist.com">info@yourmytherapist.com</a> so we can
+                                        the contact information; if you discover any inaccuracies, please email us at <a style="text-decoration: underline; color:#007BFF;" href="mailto:info@yourmytherapist.com">info@yourmytherapist.com</a> so we can
                                         update
                                         it.
                                     </span>
