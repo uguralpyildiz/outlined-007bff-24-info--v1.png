@@ -1567,7 +1567,7 @@ select:hover,select:focus {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
@@ -1626,7 +1626,7 @@ select{
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 55%;
     z-index: 9;
     text-decoration: none;
