@@ -6,7 +6,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+section{
+    scroll-margin-top: 100px;
+}
  body {
     position: relative;
     background: url(https://raw.githubusercontent.com/uguralpyildiz/yourmytherapist.com/refs/heads/main/img/background.jpg);
@@ -20,11 +22,12 @@ body::after {
     position: fixed;
     top: 0;
     left: 0;
-    background: #fff;
+    background: #ffffffbb;
     width: 100%;
     height: 100vh;
     z-index: -1;
-    opacity: 0.85;
+    opacity: 1;
+  
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -44,7 +47,258 @@ background: linear-gradient(320deg, #041c3a 65%, #041f3f 65%);
   
     margin: auto;
 }
+.alt-welcome-list{
+    height: 100%;
+}
+.alt-welcome-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+}
+.alt-welcome-list .list-item{
+   max-width:42%;
+    align-items: center;
+    background: #ffffff20;
+    border: 2px solid #00000010;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 0 0 35px #00000015;
+}
+.list-item a {
+    text-decoration: underline;
+    color: #353535;
+    margin: 0 25px;
+    font-weight: 600;
+}
 
+.list-item-piece {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.piece-one-list {
+background: #ffffff20;
+    border: 2px solid #00000010;
+    border-radius: 6px;
+    box-shadow: 0 0 35px #00000015;
+    
+}
+
+.li-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding:0 25px;
+    padding-top: 25px;
+    border-radius:0 0 5px 0;
+    font-weight: 600;
+    color: #353535;
+}
+.piece-one-list .li-head{
+    padding: 0 15px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.piece-one-list .li-alt{
+    padding:15px;
+}
+.piece-one-list .li-head-numbers{
+    font-size: 16px;
+}
+.list-item{
+    display: flex;
+    align-items: start !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list-item-img{
+   display: flex;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.list-item-img img{
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+.li-head-numbers{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+    color: #353535;
+}
+.features-plan{
+    display: none;
+    background: #00000007;
+    border: 1px solid #00000015;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.li-alt{
+    color: #444444;
+    font-size: 14px;
+    padding: 25px;
+}
+.right-button-link-welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #303030;
+    border-radius: 500px;
+
+}
+.container-welcome {
+    position: relative;
+    background-color: #ffffffec;
+    background-image: url(https://raw.githubusercontent.com/uguralpyildiz/yourmytherapist.com/refs/heads/main/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 50px #00000020;
+    z-index: 1;
+}
+.container-welcome::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffffd3;
+    z-index: -1;
+}
+.testimonials-container .list-item-piece{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+   
+    flex-wrap: wrap;
+}
+.fa-quote-left{
+    color: #0173EB;
+}
+
+.testimonials-container .list-item-piece .piece-one-list{
+    max-width: calc(49.1392%) !important;
+    width: calc(49.1392%);
+    min-width: calc(49.1392%);
+}
+.plans-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.plans-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    width: 33.3%;
+    border-radius: 6px;
+    
+    background: #ffffff20;
+    
+    box-shadow: 0  0 35px #00000015;
+}
+.middle-plan{
+    position: relative;
+    background-color: #ffffff91;
+    box-shadow: 0 0 25px #00000028;
+}
+.plans-box .submit-title{
+    display: flex;
+    flex-direction: column !important;
+    align-items: start;
+}
+.plan-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 400;
+    border-radius: 6px;
+    
+}
+
+
+.plans-box .price-text{
+    text-decoration: underline;
+    text-decoration-color: #007BFF;
+}
+#welcome .download-cv::before{
+    background: transparent;
+    animation: none !important;
+}
+.container-flex-welcome {
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-welcome{
+    position: relative;
+    padding-bottom: 180px !important;
+    z-index: 1;
+    border-bottom: 5px solid #00000010;
+}
+.hero-welcome iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hero-welcome::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000099;
+    z-index: 1;
+}
+#welcome{
+    position: relative;
+    top: -150px;
+    z-index: 2;
+}
+.welcome-wrap-disorder {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    
+}
+
+
+.welcome-wrap img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
 .nav-menu-header {
     display: none;
 }
@@ -52,9 +306,40 @@ background: linear-gradient(320deg, #041c3a 65%, #041f3f 65%);
 i {
     margin-right: 8px;
 }
+.social-img-container{
+    display: flex;
+    align-items: center;
+   
+  
+    gap: 10px;
+    padding:0 15px;
 
+    margin-bottom: 15px;
+}
 
+.social-list{
+    display: flex;
+    align-items: center;
+    color: #303030;
+    gap: 5px;
+    background: #00000005;
+    border: 1px solid #00000007;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.social-img-container img{
+    width: 25px;
+    height: 25px;
+}
 
+.star-content{
+    display: none;
+    align-items: center;
+    font-size: 22px;
+    padding: 10px 0;
+    opacity: 0.5;
+}
 
 .nav-link {
     color: #fff;
@@ -443,9 +728,20 @@ i {
     padding: 0;
 }
 
+.testimonials-header {
+    max-width: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials-img {
+    width: 42% !important;
+}
+
 /* responsive tablet navbar start */
 @media only screen and (max-width: 1300px) {
-    
+   
     .footer-ul li {
             display: inline-block;
             align-items: center;
@@ -463,11 +759,54 @@ i {
         border-left: none;
         border-right: none;
     }
+   
+.piece-one-list {
+    min-width: 100% !important;
+}
 
 
 }
 
 @media only screen and (max-width: 1150px) {
+    .mobile-header h1{
+        font-size: 32px;
+    }
+    .alt-welcome-list {
+            flex-direction: column !important;
+        }
+    
+        .container-welcome {
+            border-radius: 0;
+            padding: 10px;
+        }
+    
+        .plans-container {
+            flex-direction: column;
+        }
+    
+        .plans-box {
+            width: 100%;
+            overflow: hidden;
+        }
+    
+        .list-item {
+            width: 100%;
+            min-width: 100%;
+        }
+    
+        .piece-one-list {
+            min-width: 100% !important;
+        }
+    
+        .testimonials-header {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .testimonials-img {
+            width: 100% !important;
+        }
     .logo span{
         font-size: 18px;
     }
@@ -1600,7 +1939,7 @@ select{
     padding: 50px;
     width: 200px;
     max-width: 300px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 .user-text-message-content{
     display: flex;
@@ -1620,7 +1959,9 @@ select{
     align-items: center;
     gap: 5px;
 }
-
+.welcome-title{
+    font-size: 48px;
+}
 .social-links a{
     display: flex;
     align-items: center;
@@ -1882,4 +2223,5 @@ appearance: none;
     background-size: contain;
     
 }
+
 
