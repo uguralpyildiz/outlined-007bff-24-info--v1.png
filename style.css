@@ -90,7 +90,10 @@ background: #ffffff20;
     box-shadow: 0 0 35px #00000015;
     
 }
-
+.list-item-data-flex .li-alt{
+    
+    max-width: 550px;
+}
 .li-head{
     display: flex;
     align-items: center;
@@ -217,15 +220,18 @@ background: #ffffff20;
     padding: 15px;
     width: 33.3%;
     border-radius: 6px;
-    
-    background: #ffffff20;
+    background: #ffffff99;
     
     box-shadow: 0  0 35px #00000015;
 }
 .middle-plan{
     position: relative;
-    background-color: #ffffff91;
+    background-color: #ffffff;
+    
     box-shadow: 0 0 25px #00000028;
+}
+.plans-box .submit-alt{
+    height: 80px;
 }
 .plans-box .submit-title{
     display: flex;
@@ -334,13 +340,44 @@ i {
 }
 
 .star-content{
-    display: none;
+    display: flex;
     align-items: center;
-    font-size: 22px;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 16px;
     padding: 10px 0;
-    opacity: 0.5;
+    margin-top: 20px;
+    color: #303030;
 }
-
+.star-content span{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.star-content span i{
+    width: 20px;
+    font-weight: 14px;
+    
+}
+.star-content div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    background: #ffffff5d;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #00000010;
+}
+.fa-circle-check{
+    color: #1f8a31;
+    font-size: 18px;
+}
+.fa-circle-xmark{
+    color: #ca4747;
+    font-size: 18px;
+}
 .nav-link {
     color: #fff;
     text-align: center;
