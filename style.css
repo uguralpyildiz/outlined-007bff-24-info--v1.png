@@ -9,6 +9,9 @@ html{
 section{
     scroll-margin-top: 100px;
 }
+div{
+    scroll-margin-top:100px ;
+}
  body {
     position: relative;
     background: url(https://raw.githubusercontent.com/uguralpyildiz/yourmytherapist.com/refs/heads/main/img/background.jpg);
@@ -287,6 +290,11 @@ background: #ffffff20;
     z-index: 1;
 }
 #welcome{
+    position: relative;
+    top: -150px;
+    z-index: 2;
+}
+#reviews{
     position: relative;
     top: -150px;
     z-index: 2;
@@ -1913,14 +1921,22 @@ select:hover,select:focus {
 
 .nooneelseone{
     display: flex;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: left;
     font-size: 18px;
     margin-bottom: 15px;
     padding: 10px 25px;
     flex-direction: column;
 }
 .user-text {
+    display: flex;
+    align-items: center;
+    
+    padding: 10px;
+    text-align: left;
+    background: #fff;
+}
+.user-texts {
     display: flex;
     align-items: center;
     
@@ -1936,9 +1952,38 @@ select:hover,select:focus {
     padding: 10px;
     gap: 10px;
 }
+.right-reviews-link{
+    position: absolute;
+    top: 53%;
+    right: 10px;
+    z-index: 10;
+}
+.reviews-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.reviews-link a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(58, 84, 139);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ffffff75;
+}
 .user-text-alt a{
     width: 33.3%;
 }
+.right-reviews-link{
+    display: flex;
+    justify-content: end;
+}
+
 .img-container{
     position: relative;
     display: flex;
@@ -2070,13 +2115,16 @@ background: #041f3fc2;
 }
 
 .img-container img{
-    width: 200px;
+    width: 150px;
     margin-left: 20px;
     margin-top: 20px;
     border-radius: 6px;
     z-index: 99;
     padding: 5px;
     background: #E0E4EC;
+}
+.fa-hand-holding-heart{
+    color: rgb(58, 84, 139);
 }
 
 .about-sec-content p{
