@@ -813,6 +813,9 @@ i {
 }
 
 @media only screen and (max-width: 1150px) {
+    .faqs-container{
+        flex-direction: column;
+    }
     .mobile-header h1{
         font-size: 32px;
     }
@@ -2310,3 +2313,63 @@ appearance: none;
 }
 
 
+.accordion {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+.accordion-header {
+    position: relative;
+    background-color: #F5FAFF;
+    color: #353535;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    transition:  0.3s ease all;
+    border-radius: 5px;
+    border: 1px solid #cee7ff;
+    z-index: 1;
+}
+
+.faqs-container{
+    display: flex;
+    max-width: 100%;
+}
+
+.accordion-content {
+    position: relative;
+    top: -15px;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    color: #333;
+    transition: max-height 0.2s ease;
+    border-radius:0 0 5px 5px;
+    border: 1px solid #cee7ff;
+    border-top: none;
+    z-index: 0;
+}
+
+.accordion-content p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.4s ease;
+}
+
+.active .icon {
+    transform: rotate(180deg);
+}
