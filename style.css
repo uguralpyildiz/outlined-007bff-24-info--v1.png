@@ -2487,13 +2487,14 @@ text-decoration: none;
     color: #ca4747;
 }
 
-.li-blog-title{
+.li-blog-title {
     font-weight: 600;
     font-size: 20px;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-wrap: nowrap;
+    white-space: nowrap;
+    display: block;
 }
 .help-container{
     display: flex;
