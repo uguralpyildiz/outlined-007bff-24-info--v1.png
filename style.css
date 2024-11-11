@@ -2273,8 +2273,7 @@ text-decoration: none;
     right: 10px;
     gap: 10px;
     background: #ffffff50; 
-    box-shadow: 0 0 15px #00000015;
-    padding: 10px;
+    
     border-radius: 5px;
     z-index: 99;
 }
@@ -2317,6 +2316,12 @@ text-decoration: none;
 }
 .book-a-session-btn2 a{
     text-decoration: none;
+    width: 50px !important;
+    height: 50px !important; 
+}
+.book-a-session-btn2 a i{
+    margin-right: 0;
+    font-size: 28px;
 }
 .book-a-session-btn2 .download-cv{
     padding: 15px;
