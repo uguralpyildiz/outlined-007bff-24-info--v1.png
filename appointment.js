@@ -1,4 +1,4 @@
-let selectedDate = null;
+let selectedDate;
 let timeSelected = null;
 let platformSelected = null;
 let whatsappNumber = null;
@@ -27,36 +27,174 @@ function displaySummary() {
     }
 }
 
+
+    const doluSaatler = {
+        '13 November, Wednesday': ['08:00', '14:00', '08:30'],
+    };
+
+    function formatNumber(num) {
+        return num < 10 ? '0' + num : num; // 1 basamaklı sayılara sıfır ekle
+    }
+
+    function tarihVeSaatEkle() {
+        const bugun = new Date();
+        const gunler = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const aylar = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+        const gun = gunler[bugun.getDay()]; // Bugünün gününü al
+        const ay = aylar[bugun.getMonth()]; // Bugünün ayını al
+        const tarih = `${formatNumber(bugun.getDate())} ${ay}, ${gun}`; // İstenilen formatta tarih oluştur
+
+        // Mevcut saat ve dakika
+        const saat = bugun.getHours();
+        const dakika = bugun.getMinutes();
+        
+        // Saat ve dakikayı birleştir
+        const mevcutSaat = new Date(bugun.getFullYear(), bugun.getMonth(), bugun.getDate(), saat, dakika);
+
+        // Dolu saatleri hesapla
+        const doluSaatAraliklari = [];
+        let eklenenSaat = new Date(bugun.getFullYear(), bugun.getMonth(), bugun.getDate(), 8, 0); // 08:00'den başla
+
+        // Eğer mevcut saat 08:00'den ilerideyse, aralığı oluştur
+        if (mevcutSaat >= eklenenSaat) {
+            while (eklenenSaat <= mevcutSaat) {
+                doluSaatAraliklari.push(`${formatNumber(eklenenSaat.getHours())}:${formatNumber(eklenenSaat.getMinutes())}`);
+                eklenenSaat.setMinutes(eklenenSaat.getMinutes() + 30); // 30 dakika ekle
+            }
+        }
+
+        // Yeni dolu saatleri mevcut tarih için ekle
+        if (!doluSaatler[tarih]) {
+            doluSaatler[tarih] = [];
+        }
+
+        doluSaatAraliklari.forEach(saat => {
+            if (!doluSaatler[tarih].includes(saat)) {
+                doluSaatler[tarih].push(saat);
+            }
+        });
+
+        // Sonucu konsola yazdır
+        console.log(JSON.stringify(doluSaatler, null, 2));
+    }
+
+    
+
+
+tarihVeSaatEkle();
+
 // Tarih seçici ayarları
 flatpickr("#flatpickr-container", {
     inline: true,
     dateFormat: "d F, l",
-    minDate: "today", 
-    maxDate: new Date(new Date().setDate(new Date().getDate() + 60)), 
+    minDate: "today",
+    maxDate: new Date(new Date().setDate(new Date().getDate() + 60)),
     onChange: (selectedDates, dateStr) => {
         selectedDate = dateStr;
         document.getElementById("timeSlots").classList.remove("hidden");
 
+        // Saat slotlarını kontrol et ve dolu olanları işaretle
+        kontrolEtVeGoster(dateStr);
+        // Sayfa yüklendiğinde tarih ve saat ekle
         
-        if (timeSelected) { 
-            document.getElementById("nextStepButton1").innerHTML = `Continue to ${selectedDate}, ${timeSelected} <i style="margin-right:0; margin-left:8px" class="fa-solid fa-angle-right"></i>`;
-        } else { 
-            document.getElementById("nextStepButton1").textContent = `Please Select Date`;
+        // Eğer önceki saat dolu ise, seçimi sıfırla
+        if (timeSelected && doluSaatler[selectedDate]?.includes(timeSelected)) {
+            timeSelected = null; // Seçilen saati sıfırla
+            document.getElementById("nextStepButton1").classList.add("hidden"); // Butonu gizle
+            document.querySelectorAll('.time-slot').forEach(slot => slot.classList.remove('selected')); // Seçimi kaldır
         }
+
+        // Buton metnini güncelle
+        güncelleButonMetni();
     }
 });
 
-
-// Saat Seçimi
+// Saat seçimi
 function selectTime(time) {
+    if (doluSaatler[selectedDate]?.includes(time)) {
+        alert("This time slot is already reserved."); // Dolu saat için uyarı
+        return; // Dolu saat seçildiğinde hiçbir şey yapma
+    }
+
+    const [hour, minute] = time.split(':').map(Number);
+    const slotDateTime = new Date(`${selectedDate} ${hour}:${minute}`);
+    const currentDateTime = new Date();
+
+    // Eğer saat geçmişteyse, kullanıcıyı bilgilendir
+    if (slotDateTime < currentDateTime) {
+        alert("You cannot select a past time slot.");
+        return; // Geçmiş saat seçildiğinde hiçbir şey yapma
+    }
+
     timeSelected = time;
     document.querySelectorAll('.time-slot').forEach(slot => slot.classList.remove('selected'));
     document.querySelector(`[onclick="selectTime('${time}')"]`).classList.add('selected');
 
     // Buton metnini güncelle
-    document.getElementById("nextStepButton1").innerHTML = ` Continue to ${selectedDate}, ${time} <i style="margin-right:0; margin-left:8px" class="fa-solid fa-angle-right"></i>`;
-    document.getElementById("nextStepButton1").classList.remove("hidden");
+    güncelleButonMetni();
 }
+
+// Belirli tarihteki dolu saatleri kontrol et ve işaretle
+function kontrolEtVeGoster(tarih) {
+    const timeSlots = document.querySelectorAll('.time-slot');
+    const currentDateTime = new Date();
+
+    // Önce tüm saatleri varsayılan hale döndür
+    timeSlots.forEach(slot => {
+        slot.classList.remove('dolu');
+        slot.textContent = slot.textContent.replace(' ', ''); // "" ibaresini kaldır
+        slot.style.display = 'block'; // Varsayılan olarak görünür yap
+        slot.onclick = () => selectTime(slot.textContent.trim()); // Tıklanabilir hale getir
+    });
+
+    // Seçilen tarihteki dolu saatleri işaretle ve geçmiş saatleri gizle
+    const doluSaatlerGunu = doluSaatler[tarih] || [];
+    timeSlots.forEach(slot => {
+        const saat = slot.textContent.trim();
+        const [hour, minute] = saat.split(':').map(Number);
+        const slotDateTime = new Date(`${tarih} ${hour}:${minute}`);
+
+        // Eğer saat dolu ise, dolu sınıfını ekle ve tıklanamaz yap
+        if (doluSaatlerGunu.includes(saat)) {
+            slot.classList.add('dolu');
+            slot.textContent += ' ';
+            slot.onclick = null; // Dolu saatleri tıklanamaz yap
+        }
+
+        // Eğer saat geçmişte ise, görünümünü gizle
+        if (slotDateTime < currentDateTime) {
+            slot.style.display = 'none'; // Geçmiş saatleri gizle
+        }
+    });
+}
+
+// Buton metnini güncelleme fonksiyonu
+function güncelleButonMetni() {
+    const button = document.getElementById("nextStepButton1");
+    if (timeSelected) {
+        button.innerHTML = `Continue to ${selectedDate}, ${timeSelected} <i style="margin-right:0; margin-left:8px" class="fa-solid fa-angle-right"></i>`;
+        button.classList.remove("hidden");
+    } else {
+        button.textContent = `Please Select Date`;
+    }
+}
+
+// CSS ile dolu saatleri belirt
+document.head.insertAdjacentHTML('beforeend', `
+<style>
+    .dolu {
+        background-color: #007bff;
+        color: white;
+        pointer-events: none;
+        font-weight: bold;
+        opacity: .3;
+    }
+</style>
+`);
+
+
+
 
 // Platform Seçimi
 function selectPlatform(platform) {

@@ -1237,6 +1237,32 @@ label{
     height: 500px;
     background: #fff;
  }
+ #skip-question a{
+    cursor: pointer;
+ }
+ .eases{
+    position: relative; 
+    top: 0;
+    transition: .8s ease all;
+    animation: eases .7s ease;
+ }
+
+ .blobus{
+   
+    margin:50px auto;
+ }
+ .blobus h1{
+    font-size: 23px !important ;
+ }
+  .bloboss h1 {
+     
+      font-size: 18px !important;
+      padding: 10px;
+      border-radius: 5px;
+     
+      max-width: 500px !important;
+      
+  }
 .submit-title{
     display: flex;
     align-items: center;
@@ -1327,9 +1353,7 @@ label{
     text-decoration: none;
     color: #fff;
 }
- button:hover {
-     opacity: 0.8;
- }
+ 
 
  textarea {
      width: calc(100%);
@@ -2042,11 +2066,11 @@ appearance: none;
     position: relative;
     display: flex;
     align-items: center;
-    background: url(https://images.unsplash.com/photo-1620503320911-c6dc70b8aa31?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background: url(https://images.unsplash.com/photo-1614850716190-2175f14cb696?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
    width: 100%;
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center;
+   background-position: top;
    padding: 80px 10px;
    z-index: 0;
 }
@@ -2057,8 +2081,74 @@ appearance: none;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #041f3f, #041f3f99);
+    
     z-index: -1;
+    opacity: .5;
+}
+@keyframes outline {
+    from {
+        stroke-dasharray: 0, 345.576px;
+    }
+
+    to {
+        stroke-dasharray: 345.576px, 345.576px;
+    }
+}
+
+#outline {
+    animation: 0.38s ease-in outline;
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+@keyframes circle {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+#white-circle {
+    animation: 0.35s ease-in 0.35s forwards circle;
+    transform: none;
+    transform-origin: center;
+}
+
+@keyframes check {
+    from {
+        stroke-dasharray: 0, 75px;
+    }
+
+    to {
+        stroke-dasharray: 75px, 75px;
+    }
+}
+
+#check {
+    animation: 0.34s cubic-bezier(0.65, 0, 1, 1) 0.8s forwards check;
+    stroke-dasharray: 0, 75px;
+}
+
+@keyframes check-group {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.09);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+#check-group {
+    animation: 0.32s ease-in-out 1.03s check-group;
+    transform-origin: center;
 }
 .blog-section .testimonials-container .li-alt .download-cv::before{
    animation: none !important;
@@ -2359,7 +2449,7 @@ text-decoration: none;
 align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url(https://images.unsplash.com/photo-1678802892726-81d72767280f?q=80&w=2098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2czY3A4emM2dDZsYWdhb3Jrc3lxeHB6Z2d1OXp2ZXEyYm12Nno5YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PMz9x6O9cb5AnBzosO/giphy.webp);
     max-width: 700px;
     background-position: center;
     background-size: cover;
@@ -2388,8 +2478,8 @@ align-items: center;
     border: 1px solid #007BFF50;
     margin: 20px 0;
     padding: 10px;
-    margin-bottom: 110px;
-    margin-top: 0;
+    margin-top: 80px;
+    margin-bottom: 0;
     border-radius: 5px;
     max-height: 1000px;
     width: 100%;
@@ -2398,9 +2488,9 @@ align-items: center;
 }
 .session-title-summary{
     position: absolute !important;
-    bottom: 0;
+    top: 0;
     left: 0;
-    border-radius:30px 30px 0 0;
+    border-radius:0 0 0 0;
     width: 100%;
     padding:0 22px !important;
 }

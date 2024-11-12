@@ -134,7 +134,7 @@
         </div>
         <div class="overlay-navbar"></div>
     </nav>
-    
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
     <section class="hero">
     
     
@@ -161,7 +161,7 @@
     
                 
             </div>
-            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            
             <div class="form-submit-page appointment">
                 <div class="form-submit-page-container">
                     
@@ -403,10 +403,9 @@
                     <!-- Randevu Onay Ekranı -->
                     <div id="confirmationStep" class="ste-con hidden easesanim">
                         
-                        <div class="prev"> <img width="25" height="25" src="https://img.icons8.com/sf-ultralight-filled/007bff/25/back.png"
-                                alt="back" /> </div>
+                        
                         <div class="alt">
-                            <form id="confirmationForm" action="https://formspree.io/f/xgvewbwe" method="POST">
+                            <form id="confirmationForm" action="https://formspree.io/f/movqwnjd" method="post" target="dummyframe">
                                 <input type="hidden" name="date" id="confirmDate">
                                 <input type="hidden" name="time" id="confirmTime">
                                 <input type="hidden" name="platform" id="confirmPlatform">
@@ -421,8 +420,8 @@
                                         <span>
                                             <strong>Session Duration</strong>
                                             <select name="session-duration" id="session-duration">
-                                                <option value="30min">30 Minutes</option>
-                                                <option value="60min">60 Minutes</option>
+                                                <option value="30min-individual">30 Minutes</option>
+                                                <option value="60min-individual">60 Minutes</option>
                                             </select>
                                         </span>
                                         <button type="submit" class="download-cv" id="confirmButton">Confirm Payment $44,90</button>
@@ -430,6 +429,9 @@
                                 </div>
                             </form>
                             
+
+                           
+
                             <script>
                                 const sessionDuration = document.getElementById('session-duration');
                                 const confirmButton = document.getElementById('confirmButton');
@@ -484,12 +486,12 @@
            
             <div id="survey-scroll">
                 <div id="skip-question" class="head-title-pill">
-                    <a href="#" class="head-pill" >
+                    <a class="head-pill" >
                         <i class="fa-solid fa-chevron-right"></i> Skip Questions and Go to Session
                     </a>
                 
                 </div>
-                <form  onclick="scrollToSurvey()" id="survey-form" action="https://formspree.io/f/myzyynjb" method="post" target="dummyframe">
+                <form  onclick="scrollToSurvey()" id="survey-form" action="https://formspree.io/f/xgveyloy" method="post" target="dummyframe">
                 
                     <div class="progress-bar">
                         <div class="progress"></div>
@@ -1686,6 +1688,50 @@
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="appointment.js"></script>
 
+<script>
+    const confirmButtonP = document.querySelector("#confirmButton")
+    const confirmationStepP = document.querySelector("#confirmationStep")
+    confirmButtonP.addEventListener("click", () => {
+        setTimeout(() => {
+            confirmationStepP.innerHTML = `
+<div class="container container-sess blobus">
+                        <div class="info-bar" style="text-align: center;">
+                            <svg style="margin-bottom: 15px;" width="75px" height="75px" viewBox="0 0 133 133" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="check-group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <circle id="filled-circle" fill="#1CBB57" cx="66.5" cy="66.5" r="54.5"></circle>
+                                    <circle id="white-circle" fill="#FFFFFF" cx="66.5" cy="66.5" r="55.5"></circle>
+                                    <circle id="outline" stroke="#1CBB57" stroke-width="4" cx="66.5" cy="66.5" r="54.5">
+                                    </circle>
+                                    <polyline id="check" stroke="#FFFFFF" stroke-width="4" points="41 70 56 85 92 49">
+                                    </polyline>
+                                </g>
+                            </svg>
+
+                            <h1 class="easesanim" style="font-size: 32px; color: #2c2c2c;">That's all!</h1>
+                            <h1 class="eases"
+                                style="font-size: 28px; color: #2c2c2c; font-weight: 400; max-width: 700px; margin: auto;">
+                                Your session details and payment link have been sent to<br>
+                                <span style="text-decoration: underline;font-weight: 600; text-decoration-color: #007BFF;">
+                                   ${document.getElementById("email").value} 
+                                </span>
+                            </h1>
+                            <div class="bloboss">
+                                <h1 class="eases" style=" color: #2c2c2c; font-weight: 400; max-width: 700px; margin: auto;">
+                                    Please note that preparing your personalized therapy
+                                    plan and email may take approximately 1-2 hours.
+                                </h1>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+`;
+        }, 100);
+    })
+</script>
 
   <script>
     // ipapi servisini kullanarak ülkeyi belirleme fonksiyonu
