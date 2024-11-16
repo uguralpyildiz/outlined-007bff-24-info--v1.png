@@ -1807,8 +1807,8 @@ select{
     align-items: center;
     justify-content: center;
     background: #fff;
-    padding: 50px;
-    width: 200px;
+    padding:30px 10px;
+    width: 230px;
     max-width: 300px;
     border-radius: 6px;
 }
@@ -1817,6 +1817,9 @@ select{
     align-items: center;
     justify-content: center;
     
+}
+.kafamineeti h2,.kafamineeti h3{
+    padding-left:0 ;
 }
 .close-btn{
     cursor: pointer;
